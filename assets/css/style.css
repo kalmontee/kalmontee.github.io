@@ -2,7 +2,10 @@
 This CSS file is being combined with the three HTML file. Contact, Index, Portfolio.
 
 */
+
+
 /********Global*********/
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
@@ -11,33 +14,43 @@ body {
     overflow: auto;
 }
 
+
 /*Section for Index, Portfolio, Contact */
+
 section {
     background-color: rgb(233, 233, 233);
 }
 
+
 /*container for Index, Portfolio, Contact */
+
 .container {
     width: 960px;
     margin: 0 auto;
     overflow: auto;
 }
 
+
 /*main-content for Index, Portfolio, Contact */
+
 .main-content {
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     margin: 50px 0;
     padding: 20px;
 }
 
+
 /*h1 heading*/
+
 h1 {
     color: #4aaaa5;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-bottom: 20px;
-    border-bottom: 2px solid #dddddd; /*Main content border color*/
+    border-bottom: 2px solid #dddddd;
+    /*Main content border color*/
 }
+
 
 /***********Header************/
 
@@ -82,11 +95,16 @@ nav ul li a {
     border-right: 1px solid rgb(235, 234, 234);
 }
 
+
 /*Contact.html link*/
+
 #contact {
     border-right: none;
 }
+
+
 /*Hovering all a links*/
+
 a:hover {
     color: #fff;
     background-color: #4aaaa5;
@@ -94,12 +112,12 @@ a:hover {
     border-radius: 5px;
 }
 
+
 /*********Index.HTML********/
 
 #profile-pic {
     width: 150px;
     float: left;
-    
     margin-right: 10px;
 }
 
@@ -108,12 +126,15 @@ div.info {
     line-height: 2em;
 }
 
+
 /******************Contact.html********************/
+
 form {
     color: #777777;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     text-decoration: none;
     margin: 10px 0;
@@ -137,21 +158,39 @@ button:hover {
     color: yellow;
 }
 
+
 /********************Portfolio*****************/
-.portfolio-images {
-   display: flex;
+
+.portfolio-work {
+    /* width: 50%; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    overflow: auto;
 }
 
-.images-container {
-    width: 500px;
+.inner-container {
+    /* width: 90%; */
 }
 
-.images-container img {
+
+/* .images-container img {
     width: 200px;
     padding: 10px;
     height: 200px;
     border: none;
-    /* opacity: 0.5; */
+    opacity: 0.5;
+} */
+
+div.work img {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: none;
+}
+
+div.work {
+    width: 35%;
+    float: left;
 }
 
 img:hover {
@@ -172,30 +211,32 @@ img:hover {
 
 .baseball-game {
     top: 386px;
-    right: 940px;;
+    right: 1009px;
 }
 
 .office-img {
     top: 386px;
-    right: 716px;
+    right: 687px;
 }
 
 .dog {
     top: 608px;
-    right: 940px;
+    right: 1009px;
 }
 
 .ninja {
     top: 832px;
-    right: 940px;
+    right: 1009px;
 }
 
 .nightlife {
     top: 608px;
-    right: 716px;
+    right: 687px;
 }
 
+
 /********************Footer*******************/
+
 footer {
     text-align: center;
     background-color: #666666;
@@ -205,4 +246,3 @@ footer {
     padding: 15px;
     border-top: 8px solid #4aaaa5;
 }
-
