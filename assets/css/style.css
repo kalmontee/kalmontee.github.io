@@ -28,6 +28,7 @@ section {
     width: 960px;
     margin: 0 auto;
     overflow: auto;
+    min-height: 100vh;
 }
 
 
@@ -238,11 +239,12 @@ img:hover {
 /********************Footer*******************/
 
 footer {
-    text-align: center;
-    background-color: #666666;
-    position: sticky;
-    font-size: 13px;
-    color: rgb(179, 179, 179);
-    padding: 15px;
     border-top: 8px solid #4aaaa5;
+    background-color: #666666;
+    color: rgb(179, 179, 179);
+    font-size: 13px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    padding: 15px;
 }
