@@ -169,10 +169,6 @@ button:hover {
     overflow: auto;
 }
 
-.inner-container {
-    /* width: 90%; */
-}
-
 
 /* .images-container img {
     width: 200px;
@@ -185,54 +181,37 @@ button:hover {
 div.work img {
     width: 200px;
     height: 200px;
-    padding: 10px;
-    border: none;
-}
-
-div.work {
-    width: 35%;
-    float: left;
+    border: 0 none;
 }
 
 img:hover {
     opacity: 1.0;
 }
 
+div.work {
+    position: relative;
+    float: left;
+    width: 350px;
+    padding-bottom: 10px;
+    overflow: auto;
+}
+
+
+/* .work:nth-child(even) {
+    margin-right: 40px;
+} */
+
 .heading-project-title {
-    position: absolute;
     background-color: #4aaaa5;
     color: white;
     text-align: center;
-    width: 199px;
+    bottom: 20px;
+    width: 49%;
     font-size: 15px;
-    margin: 0;
-    padding: 10px 1px;
+    margin-bottom: 0;
+    padding: 15px;
     font-weight: normal;
-}
-
-.baseball-game {
-    top: 386px;
-    right: 1009px;
-}
-
-.office-img {
-    top: 386px;
-    right: 687px;
-}
-
-.dog {
-    top: 608px;
-    right: 1009px;
-}
-
-.ninja {
-    top: 832px;
-    right: 1009px;
-}
-
-.nightlife {
-    top: 608px;
-    right: 687px;
+    position: absolute;
 }
 
 
