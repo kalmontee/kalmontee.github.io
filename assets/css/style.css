@@ -196,11 +196,6 @@ div.work {
     overflow: auto;
 }
 
-
-/* .work:nth-child(even) {
-    margin-right: 40px;
-} */
-
 .heading-project-title {
     background-color: #4aaaa5;
     color: white;
@@ -224,6 +219,5 @@ footer {
     font-size: 13px;
     text-align: center;
     position: sticky;
-    bottom: 0;
     padding: 15px;
 }
