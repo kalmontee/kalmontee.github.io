@@ -5,52 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Portfolio</title>
+    <meta name="author" content="Kelvin Almonte">
+    <!-----------Google Fonts------->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-----------Bootstrap---------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!---------Favicon/Webfonts----->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+    <!----------CSS----------------->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <title>Showcase</title>
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <div class="branding">
-                <h3>Kelvin Almonte</h3>
+            <!-- <div class="responsive-bar"> -->
+            <div id="branding">
+                <h1 id="home-click"><a id="home-click" href="index.html">Kelvin <span>Almonte</span></a></h1>
             </div>
+
+            <!-- <div class="movil-bar">
+                <i class="fas fa-bars"></i>
+            </div> -->
+
             <nav>
-                <ul>
-                    <li><a class="nav-links" href="index.html">About</a></li>
-                    <li><a class="nav-links" href="portfolio.html">Portfolio</a></li>
-                    <li><a class="nav-links" href="contact.html" id="contact">Contact</a></li>
-                </ul>
+                <a href="about-me.html">About Me</a>
+                <a href="portfolio.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Blog</a>
+                <!---<i class="fas fa-bars"></i>-->
             </nav>
+            <!-- </div> -->
         </div>
     </header>
 
-    <section>
-        <div class="container">
-            <div class="main-content">
-                <div class="heading">
-                    <h1>About Me</h1>
-                </div>
-                <div class="img">
-                    <img id="profile-pic" src="assets/images/img.jpg" alt="Profile Photo">
-                </div>
-                <div class="info">
-                    <p class="right">Hello world, my name is Kelvin Almonte. A little quick brief about myself, I graduated from Syracuse University with a Bachelors of Science, majoring in Human Development and Family Science. I am an aspiring self-taught programmer.
-                        I have been self teaching myself how to code for 13 months, and now I am currently enrolled in Rutgers Coding Bootcamp to take my skills to the next level. I am excited to attack this opportunity and secure a dream job that I have
-                        been waiting for eons.
-                    </p>
-                    <p>
-                        Why programming? In my early years, I was always had a strong passion with technology but never really focus myself into it. I was much more of an athlete. Sports was my main passion. However, everything changed when I met a software engineer and convinced
-                        me to try and learn programming. It was at that moment I dedicated myself to learn programming.
-                        <br> If there's anything amazing about programming, is the ability to always keep learning. It's challenging, fulfilling, and of course, major headaches.
-                        <br> Please feel free to a look at my projects in the portfolio section and leave a comment in the contact section as well. Looking forward hearing from you!
-                    </p>
-                </div>
+    <!------------- First section of the website-------------->
+    <section id="showcase">
+        <div class="section-container">
+            <div class="opening-container container">
+                <h1 id="name">Hello, I'm Kelvin!</h1>
+                <h4 id="job-title">Software Engineer</h4>
+                <!--  <button>Get in Touch</button> (Added to the Contact section)-->
+                <!------Save it for later-------->
+
+                <p><q>Code is like humor. When you have to explain it, it's bad.</q> <br><span> - Cory House</span></p>
+
+                <!-- <button id="explore"><a href="about-me.html">Let's Explore</a></button> -->
+                <button type="button" class="btn btn-outline-warning btn-lg" id="explore"><a href="about-me.html">Let's Explore</button>
             </div>
         </div>
     </section>
+
     <footer>
-        Copyright &copy; Kelvin Almonte
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/almontek/" target="_blank" id="linkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+
+            <a href="https://github.com/kalmontee" target="_blank" id="git"><i class="fab fa-github"></i></a>
+
+            <!--------------No Facebook for now------------------>
+            <!-- <a href="https://www.facebook.com/almontee12" target="_blank" id="facebook"><i
+                    class="fab fa-facebook-square"></i></a> -->
+
+            <a href="mailto:kelvin.almonte95@gmail.com? subject=subject text" target="_blank" id="email-link"><i
+                    class="fas fa-envelope-square"></i></a>
+
+            <a href="#" id="resume"><i class="far fa-file"></i></a>
+            <p>&copy Kelvin Almonte</p>
+        </div>
     </footer>
 </body>
 
