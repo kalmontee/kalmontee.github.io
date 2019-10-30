@@ -257,6 +257,7 @@ div.opening-container p {
 #explore {
     padding: 10px;
     margin-top: 25px;
+    font-size: 18px;
     /*animation*/
     position: relative;
     animation-name: button;
@@ -398,7 +399,7 @@ footer div.social-links a {
         padding: 0;
     }
     header nav a {
-        font-size: 14px;
+        font-size: 17px;
         margin: 0 8px;
     }
     .header-container {
@@ -415,5 +416,8 @@ footer div.social-links a {
     #job-title {
         font-size: 40px;
         text-align: center;
+    }
+    #explore {
+        font-size: 15px;
     }
 }
