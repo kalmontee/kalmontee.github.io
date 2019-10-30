@@ -5,70 +5,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="author" content="Kelvin Almonte">
+    <!-----------Google Fonts------->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!---------------Bootstrap--------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!---------Favicon/Webfonts----->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!----------------CSSS------------------->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
     <title>Portfolio</title>
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <div class="branding">
-                <h3>Kelvin Almonte</h3>
+            <!-- <div class="responsive-bar"> -->
+            <div id="branding">
+                <h1 id="home-click"><a id="home-click" href="index.html">Kelvin <span>Almonte</span></a></h1>
             </div>
+
+            <!-- <div class="movil-bar">
+                <i class="fas fa-bars"></i>
+            </div> -->
+
             <nav>
-                <ul>
-                    <li><a class="nav-links" href="index.html">About</a></li>
-                    <li><a class="nav-links" href="portfolio.html">Portfolio</a></li>
-                    <li><a class="nav-links" href="contact.html" id="contact">Contact</a></li>
-                </ul>
+                <a href="about-me.html">About Me</a>
+                <a href="portfolio.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Blog</a>
+                <!---<i class="fas fa-bars"></i>-->
             </nav>
+            <!-- </div> -->
         </div>
     </header>
 
-    <section>
-        <div class="container">
+    <!-- Third section of the website. This is where my projects are going to be located. Add 3 to 6 divs using CSS grid -->
+    <section id="projects">
+        <div class="section-container">
+            <div class="title">
+                <h1>Projects</h1>
+            </div>
             <div class="main-content">
-                <div class="heading">
-                    <h1>Portfolio</h1>
+                <!-- <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                </ul> -->
+                <!-- <div class="portfolio">
+                    <--Portfolio
+                <div class="project-item medium city">
+                    <a href="https://kalmontee.github.io/blue.js/" target="_blank">
+                            Psychic Game
+                        </a>
                 </div>
-                <div class="portfolio-work">
-                    <div class="work">
-                        <a id="psychic-game" href="https://kalmontee.github.io/blue.js/" target="_blank"><img src="assets/images/psychic-game.png" alt="The Psychic Game">
-                            <h3 class="heading-project-title">The Psychic Game</h3>
-                        </a>
-                    </div>
+                <div class="project-item large">Project Two</div>
+                <div class="project-item medium paradice">Project Three</div>
+                <div class="project-item small">Project Four</div>
+                <div class="project-item tall">Project Five</div>
+                <div class="project-item wide">Project Six</div>
+            </div> -->
 
-                    <div class="work">
-                        <a href="https://kalmontee.github.io/jaker/" target="_blank"><img src="assets/images/crystal-collector.png" alt="crystal-collector">
-                            <h3 class="heading-project-title">Crystal Collector Game</h3>
-                        </a>
-                    </div>
+                <div class="row">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+                        <div class="card">
+                            <!-- <img src="assets/images/psychic-game.png" class="card-img-top" alt="Psychic Game Img" width="300px"> -->
+                            <div class="project-item medium psychic-game"></div>
+                            <div class="card-body">
 
-                    <div class="work">
-                        <a href="https://kalmontee.github.io/cubex/" target="_blank"> <img src="assets/images/Trivia-game.png" alt="Trivia-game">
-                            <h3 class="heading-project-title">Game of Thrones Trivia</h3>
-                        </a>
-                    </div>
+                                <h3 class="card-title">The Psychic Game</h3>
+                                <!-- Technologies -->
+                                <img id="programming-img" src="assets/images/html5.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/css3.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/JS.png" alt="HTML5" height="40px" width="40px">
 
-                    <div class="work">
-                        <a href="https://kalmontee.github.io/Lambo/" target="_blank"><img src="assets/images/Giftastic.png" alt="Giftastic">
-                            <h3 class="heading-project-title">Giphy Search</h3>
-                        </a>
-                    </div>
+                                <!-- Project Info -->
+                                <p class="card-text">What kind of powers do you have? Can you guess what letter the computer is guessing? I guess there's only one way to find out.</p>
 
-                    <div class="work">
-                        <img src="assets/images/sports.jpg" alt="sports">
-                        <h3 class="heading-project-title">Ninja Jump</h3>
+                                <!-- Project Link -->
+                                <a href="https://kalmontee.github.io/blue.js/" class="btn btn-outline-success" target="_blank">View Demo</a>
+                                <a href="https://kalmontee.github.io/blue.js/" class="btn btn-outline-success" target="_blank">View GitHub</a>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
+                        <div class="card project2">
+                            <div class="project-item medium paradic crystal-game"></div>
+                            <div class="card-body">
 
-                    <!-- <h1> Demo text <img src="./assets/images/img.jpg" width="200px" height="200px" /> </h1> -->
+                                <h3 class="card-title">Crystal Collector</h3>
+                                <!-- Technologies -->
+                                <img id="programming-img" src="assets/images/html5.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/css3.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/JS.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/jQuery.png" alt="HTML5" height="40px" width="40px">
+
+                                <!-- Project Info -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                                <!-- Project Link -->
+                                <a href="https://kalmontee.github.io/jaker/" class="btn btn-outline-success" target="_blank">View Demo</a>
+                                <a href="https://kalmontee.github.io/jaker/" class="btn btn-outline-success" arget="_blank">View GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+                        <div class="card">
+                            <!-- <img src="assets/images/psychic-game.png" class="card-img-top" alt="Psychic Game Img" width="300px"> -->
+                            <div class="project-item medium trivia-game"></div>
+                            <div class="card-body">
+
+                                <h3 class="card-title">Totally Trivia Trival</h3>
+                                <!-- Technologies -->
+                                <img id="programming-img" src="assets/images/html5.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/css3.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/JS.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/jQuery.png" alt="HTML5" height="40px" width="40px">
+
+                                <!-- Project Info -->
+                                <p class="card-text">A Game of Thrones trivia game. The user will have 15 seconds to answer each question. At the end of the trivia the user will see their final score.</p>
+
+                                <!-- Project Link -->
+                                <a href="https://kalmontee.github.io/cubex/" class="btn btn-outline-success" target="_blank">View Demo</a>
+                                <a href="https://github.com/kalmontee/cubex" class="btn btn-outline-success" target="_blank">View GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
+                        <div class="card project2">
+                            <div class="project-item medium paradic giftastic"></div>
+                            <div class="card-body">
+
+                                <h3 class="card-title">Giphy API Search</h3>
+                                <!-- Technologies -->
+                                <img id="programming-img" src="assets/images/html5.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/css3.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/JS.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/jQuery.png" alt="HTML5" height="40px" width="40px">
+                                <!-- <img id="programming-img" src="assets/images/AJAX.jpg" alt="HTML5" height="40px" width="40px"> -->
+
+                                <!-- Project Info -->
+                                <p class="card-text">Using Giphys API to search all kinds of gif images and setting them as local storage so users can save their data and return where they left off. Click giphy image to play and pause.</p>
+
+                                <!-- Project Link -->
+                                <a href="https://kalmontee.github.io/Lambo/" class="btn btn-outline-success" target="_blank">View Demo</a>
+                                <a href="https://github.com/kalmontee/Lambo" class="btn btn-outline-success" target="_blank">View GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-button">
+                    <button class="btn btn-outline-danger"><a href="">More Projects <i
+                                    class="fas fa-arrow-down"></i></a></button>
                 </div>
             </div>
+
         </div>
     </section>
+
+    <!--- Footer section-->
     <footer>
-        Copyright &copy; Kelvin Almonte
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/almontek/" target="_blank" id="linkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+
+            <a href="https://github.com/kalmontee" target="_blank" id="git"><i class="fab fa-github"></i></a>
+
+            <!--------------No Facebook for now------------------>
+            <!-- <a href="https://www.facebook.com/almontee12" target="_blank" id="facebook"><i
+                        class="fab fa-facebook-square"></i></a> -->
+
+            <a href="mailto:kelvin.almonte95@gmail.com? subject=subject text" target="_blank" id="email-link"><i
+                    class="fas fa-envelope-square"></i></a>
+
+            <a href="#" id="resume"><i class="far fa-file"></i></a>
+            <p>&copy Kelvin Almonte</p>
+        </div>
     </footer>
 </body>
 
 </html>
+<!-- Save for later! -->
+<!-- <img id="programming-img" src="assets/images/AJAX.jpg" alt="HTML5" height="40px" width="40px"> -->
+<!-- <img id="programming-img" src="assets/images/nodeJS.png" alt="HTML5" height="40px" width="40px" style="background-color: #fff;"> -->

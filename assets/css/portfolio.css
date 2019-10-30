@@ -1,0 +1,590 @@
+/*********Global *************/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    line-height: 1.5;
+    margin: auto;
+    width: 100%;
+}
+
+.header-container,
+.section-container {
+    margin: auto;
+    padding: 0 20px;
+    width: 90%;
+    overflow: hidden;
+}
+
+.section-container {
+    min-height: 100vh;
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+
+/****************************Header************************/
+
+header {
+    background-color: rgba(0, 0, 0, 0.08);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: white;
+    padding-top: 10px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0 20px;
+    transition: all ease-in-out 100ms;
+}
+
+header #branding {
+    float: left;
+}
+
+#home-click {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+header #branding span {
+    color: rgb(77, 146, 236);
+    font-style: italic;
+    font-weight: normal;
+}
+
+#home-click:hover {
+    padding-top: 1px;
+}
+
+
+/*The hamburger - for responsive use only*/
+
+
+/* .movil-bar {
+    display: none;
+    font-size: 30px;
+    margin-right: 10px;
+    float: right;
+    padding-bottom: 3px;
+    cursor: pointer;
+} */
+
+header nav {
+    display: flex;
+    float: right;
+    margin-top: 7px;
+}
+
+nav a {
+    /*animation*/
+    position: relative;
+    animation-name: header-nav;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes header-nav {
+    /* 0% {
+        right: -500px;
+    }
+    100% {
+        right: 0;
+    } */
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header a:hover {
+    color: rgb(77, 146, 236);
+    font-weight: bold;
+    /*  background-color: rgb(0, 176, 154); */
+    /* border-radius: 5px; */
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+
+/**************Section Three - Projects *******************/
+
+#projects {
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+div.title h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    font-family: 'Shadows Into Light', cursive;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(65, 65, 65);
+}
+
+.main-content {
+    border-bottom: 1px solid rgb(73, 73, 73);
+    padding: 30px;
+    flex: 1 1 80%;
+    min-height: 100vh auto;
+    margin: 0;
+}
+
+div.row {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+div.card {
+    border: none;
+    background-color: #3b3b3b;
+    margin-right: 30px;
+    height: 500px;
+    width: 420px;
+}
+
+h3.card-title {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+div.card-body {
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.08); */
+    background-color: #3b3b3b;
+}
+
+.btn {
+    margin: 10px;
+}
+
+#programming-img {
+    border-radius: 50%;
+}
+
+.portfolio {
+    display: grid;
+    height: 100%;
+    /*The width determines the size of the grid*/
+    width: 120%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(7, 1fr); */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-gap: 10px;
+}
+
+.project-item {
+    /* background-color: orangered; */
+    background-color: #677cd8;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    /* padding: 180px; */
+    padding: 120px;
+    font-size: 1em;
+}
+
+
+/********Pyschic Game********/
+
+.medium {
+    /* grid-row: span 2;
+    grid-column: span 2; */
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.psychic-game {
+    /* grid-row: span 2;
+    grid-column: span 2; */
+    grid-row: span 2;
+    grid-column: span 2;
+    background-image: url(../images/psychic-game.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 20px;
+    background-position: top right;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    text-shadow: 0 0 3px rgb(0, 0, 0.85);
+    z-index: 10;
+}
+
+.psychic-game:hover {
+    color: black;
+}
+
+.psychic-game::before {
+    content: '';
+    display: block;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 300ms;
+    z-index: -1;
+}
+
+.psychic-game:hover::before {
+    background-position: center;
+    opacity: 0.3;
+}
+
+.psychic-game:hover {
+    color: black;
+}
+
+
+/**********Crystal Game********/
+
+.crystal-game {
+    background-image: url(../images/crystal-game.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 20px;
+    background-position: top right;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 10;
+}
+
+.crystal-game::before {
+    content: '';
+    display: block;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 300ms;
+    z-index: -1;
+}
+
+.crystal-game:hover::before {
+    background-position: center;
+    opacity: 0.3;
+}
+
+.crystal-game:hover {
+    color: black;
+}
+
+
+/* Trivia Game */
+
+.trivia-game {
+    background-image: url(../images/Trivia-game.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 20px;
+    background-position: top right;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 10;
+}
+
+.trivia-game::before {
+    content: '';
+    display: block;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 300ms;
+    z-index: -1;
+}
+
+.trivia-game:hover::before {
+    background-position: center;
+    opacity: 0.3;
+}
+
+.trivia-game:hover {
+    color: black;
+}
+
+
+/* Giftastic */
+
+.giftastic {
+    background-image: url(../images/Giftastic.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 20px;
+    background-position: top right;
+    transition: all ease-in-out 300ms;
+    position: relative;
+    z-index: 10;
+}
+
+.giftastic::before {
+    content: '';
+    display: block;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all ease-in-out 300ms;
+    z-index: -1;
+}
+
+.giftastic:hover::before {
+    background-position: center;
+    opacity: 0.3;
+}
+
+.giftastic:hover {
+    color: black;
+}
+
+
+/* Next Project */
+
+
+/*****Button******/
+
+div.more-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+div.more-button a {
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    text-decoration: none;
+    /*Transition*/
+}
+
+#btn-projects {
+    border: 1px solid darkgoldenrod;
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    /* transition-property: background; */
+    transition-duration: 1s, 3s;
+    transition-timing-function: ease-in;
+}
+
+
+/* div.more-button a:hover {
+    color: rgb(77, 146, 236);
+} */
+
+
+/* Footer Section */
+
+footer {
+    background: linear-gradient(to right, #414345, #232526);
+    color: white;
+    display: block;
+    font-size: 15px;
+    padding: 15px;
+    position: sticky;
+    font-weight: none;
+    font-style: normal;
+    text-align: center;
+}
+
+div.social-links {
+    text-align: center;
+}
+
+footer div.social-links a {
+    flex-flow: wrap;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}
+
+#linkedIn {
+    color: white;
+    transition-property: all;
+    transition: ease-in-out 300ms;
+}
+
+#linkedIn:hover {
+    color: #0077b5;
+    border-radius: 10%;
+    transform: rotateX(180deg);
+}
+
+#git {
+    color: white;
+    transition: ease-in-out 300ms;
+}
+
+#git:hover {
+    color: black;
+}
+
+#email-link {
+    transition: ease-in-out 300ms;
+}
+
+#email-link:hover {
+    color: rgb(10, 223, 10);
+}
+
+#resume {
+    transition: ease-in-out 300ms;
+}
+
+#resume:hover {
+    color: yellow;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 980px) {
+    div.card {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header nav {
+        display: block;
+        height: auto;
+        width: 100%;
+        padding: 5px;
+    }
+    .header-container {
+        text-align: center;
+    }
+    #branding {
+        display: block;
+        width: 90%;
+    }
+    #home-click {
+        text-align: center;
+    }
+    header nav a {
+        font-size: 14px;
+    }
+    .main-content {
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+    .portfolio {
+        display: grid;
+        height: 100%;
+        width: 125%;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+    }
+    div.card {
+        margin-bottom: 40px;
+    }
+    footer {
+        text-align: center;
+    }
+    div.social-links a {
+        padding-bottom: 10px;
+    }
+    .project-item {
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .main-content {
+        max-height: auto;
+    }
+    header {
+        height: auto;
+        padding: 0;
+        width: 100%;
+    }
+    header nav a {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    .header-container {
+        padding: 0;
+    }
+    header nav {
+        display: block;
+        height: auto;
+        width: 100%;
+        padding: 5px;
+        justify-content: center;
+    }
+    #branding {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+    #home-click {
+        text-align: center;
+    }
+    .section-container {
+        margin: 0;
+        /* padding: 0; */
+        padding: 0 10px;
+        /* padding-left: 15px; */
+    }
+    div.card {
+        width: 300px;
+        /* width: auto; */
+        margin-right: 0;
+        margin-bottom: 85px;
+    }
+    div.card-body {
+        padding: 0 20px;
+    }
+    /* div.more-button {
+        margin-left: 40px;
+    } */
+}
