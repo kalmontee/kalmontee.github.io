@@ -5,52 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Portfolio</title>
+    <meta name="author" content="Kelvin Almonte">
+    <!-----------Google Fonts------->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!---------Bootstrap----------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!---------Favicon/Webfonts--------->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!---------CSS----------->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+
+    <title>Contact</title>
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <div class="branding">
-                <h3>Kelvin Almonte</h3>
+            <!-- <div class="responsive-bar"> -->
+            <div id="branding">
+                <h1 id="home-click"><a id="home-click" href="index.html">Kelvin <span>Almonte</span></a></h1>
             </div>
+
+            <!-- <div class="movil-bar">
+                <i class="fas fa-bars"></i>
+            </div> -->
+
             <nav>
-                <ul>
-                    <li><a class="nav-links" href="index.html">About</a></li>
-                    <li><a class="nav-links" href="portfolio.html">Portfolio</a></li>
-                    <li><a class="nav-links" href="contact.html" id="contact">Contact</a></li>
-                </ul>
+                <a href="about-me.html">About Me</a>
+                <a href="portfolio.html">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Blog</a>
+                <!---<i class="fas fa-bars"></i>-->
             </nav>
+            <!-- </div> -->
         </div>
     </header>
 
-    <section>
-        <div class="container">
-            <div class="main-content">
-                <div class="heading">
-                    <h1>Contact</h1>
-                </div>
+    <section id="contact">
+        <div class="contact-container">
+            <div class="title">
+                <h1>Get in touch!!</h1>
+            </div>
+            <div class="opening-container-contact">
+                <div class="flex">
+                    <div class="contact-info">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi fugiat. Dolorum tempora vero, nostrum, excepturi sit quidem quisquam fugiat temporibus, enim veniam culpa modi? Necessitatibus explicabo ipsam quaerat laudantium.
+                        </p>
+                        <br>
+                    </div>
 
-                <div class="form">
-                    <form action="GET">
-                        Name <br>
-                        <input type="text" name="firstname" placeholder="Kelvin Almonte">
+                    <div class="contact-links">
+                        <p>
+                            Don't hesitate to call, email or connect on LinkedIn.
+                        </p>
+                        <p>
+                            Also take a look at my resume.
+                        </p>
 
-                        <br> Email <br>
-                        <input type="text" name="email" placeholder="example23@gmail.com">
+                        <p id="phone-number"><a href="tel:201-887-4155">(201) 887- 4155</a></p>
 
-                        <br> Message <br>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/almontek/" target="_blank" id="linkedIn"><i
+                                    class="fab fa-linkedin"></i></a>
 
-                    </form>
-                    <button type="submit">Submit</button>
+                            <a href="https://github.com/kalmontee" target="_blank" id="git"><i
+                                    class="fab fa-github"></i></a>
+
+                            <!--------------No Facebook for now------------------>
+                            <!-- <a href="https://www.facebook.com/almontee12" target="_blank" id="facebook"><i
+                                    class="fab fa-facebook-square"></i></a> -->
+
+                            <a href="mailto:kelvin.almonte95@gmail.com? subject=subject text" target="_blank" id="email-link"><i class="fas fa-envelope-square"></i></a>
+
+
+                            <a href="https://docs.google.com/document/d/1Dr2_xyHBJ2rPQCU8oBdp5XK4o7XTAPfsbgKcp8xh6Ks/edit" id="resume" target="_blank"><i class="far fa-file"></i></a>
+                        </div>
+                    </div>
+                    <!-- <div class="input">
+                        <form action="" method="GET">
+                            <input type="text" placeholder="Name" id="input-name">
+                            <input type="text" placeholder="Email" id="email">
+                            <br>
+                            <textarea name="Message" placeholder="Enter your message.." id="message" cols="30" rows="10"></textarea>
+                            <br>
+                            <button type="submit" id="submit">Submit</button>
+                        </form>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
+
     <footer>
-        Copyright &copy; Kelvin Almonte
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/almontek/" target="_blank" id="linkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+
+            <a href="https://github.com/kalmontee" target="_blank" id="git"><i class="fab fa-github"></i></a>
+
+            <!--------------No Facebook for now------------------>
+            <!-- <a href="https://www.facebook.com/almontee12" target="_blank" id="facebook"><i
+                    class="fab fa-facebook-square"></i></a> -->
+
+            <a href="mailto:kelvin.almonte95@gmail.com? subject=subject text" target="_blank" id="email-link"><i
+                    class="fas fa-envelope-square"></i></a>
+
+            <a href="#" id="resume"><i class="far fa-file"></i></a>
+            <p>&copy Kelvin Almonte</p>
+        </div>
     </footer>
 </body>
 
