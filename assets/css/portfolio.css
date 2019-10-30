@@ -229,7 +229,7 @@ div.card-body {
     grid-column: span 2; */
     grid-row: span 2;
     grid-column: span 2;
-    background-image: url(../images/psychic-game.png);
+    background-image: url(../images/portfolio-images/psychic-game.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -272,7 +272,7 @@ div.card-body {
 /**********Crystal Game********/
 
 .crystal-game {
-    background-image: url(../images/crystal-game.png);
+    background-image: url(../images/portfolio-images/crystal-collector.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -310,7 +310,7 @@ div.card-body {
 /* Trivia Game */
 
 .trivia-game {
-    background-image: url(../images/Trivia-game.png);
+    background-image: url(../images/portfolio-images/Trivia-game.png);
     background-size: cover;
     background-position: center;
     color: white;
@@ -348,7 +348,7 @@ div.card-body {
 /* Giftastic */
 
 .giftastic {
-    background-image: url(../images/Giftastic.png);
+    background-image: url(../images/portfolio-images/Giftastic.png);
     background-size: cover;
     background-position: center;
     color: white;
