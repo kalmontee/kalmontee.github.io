@@ -256,7 +256,8 @@ div.info {
 }
 
 div.info-p {
-    /* padding: 10px 50px; */
+    font-size: 18px;
+    padding: 10px 50px;
     line-height: 2em;
     color: lightgray;
 }

@@ -349,38 +349,38 @@ footer div.social-links a {
 /**********Responsive***********/
 
 @media only screen and (max-width: 768px) {
-    .movil-bar {
+    /* .movil-bar {
         display: block;
-    }
-    header {
-        position: absolute;
-    }
-    header nav {
-        display: none;
-        height: auto;
-        width: auto;
-        text-align: center;
-        padding: 5px;
-    }
-    #branding {
-        display: block;
-        width: 90%;
-    }
-    #home-click {
-        text-align: center;
-    }
-    header nav a {
-        font-size: 14px;
-        color: #fff;
-        text-decoration: none;
-        padding-right: 30px;
-    }
+    } */
     /* .responsive-bar {
         display: flex;
         justify-content: space-between;
         width: 100%;
         float: right;
     } */
+    header {
+        width: 100%;
+    }
+    header nav {
+        height: auto;
+        width: 100%;
+        padding: 5px;
+        justify-content: center;
+    }
+    .header-container {
+        text-align: center;
+    }
+    #branding {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+    #home-click {
+        text-align: center;
+    }
+    header nav a {
+        font-size: 14px;
+    }
     footer p {
         text-align: center;
     }
@@ -393,6 +393,17 @@ footer div.social-links a {
 /*movil responsive*/
 
 @media only screen and (max-width: 640px) {
+    header {
+        height: auto;
+        padding: 0;
+    }
+    header nav a {
+        font-size: 14px;
+        margin: 0 8px;
+    }
+    .header-container {
+        padding: 0;
+    }
     .opening-container {
         margin-top: 30px;
         text-align: center;
@@ -401,20 +412,8 @@ footer div.social-links a {
         width: auto;
         min-width: 300px;
     }
-    #home-click {
-        text-align: left;
-    }
     #job-title {
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
-    }
-    .movil-bar {
-        /* display: block; */
-        position: relative;
-        font-size: 25px;
-        margin-right: 13px;
-    }
-    #branding {
-        width: 230px;
     }
 }
