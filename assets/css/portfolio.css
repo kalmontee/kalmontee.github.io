@@ -536,6 +536,12 @@ footer div.social-links a {
         display: flex;
         flex-flow: column wrap;
     }
+    .psychic-game::before,
+    .trivia-game::before,
+    .crystal-game::before,
+    .giftastic::before {
+        opacity: 0.1;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -587,4 +593,10 @@ footer div.social-links a {
     /* div.more-button {
         margin-left: 40px;
     } */
+    .psychic-game::before,
+    .trivia-game::before,
+    .crystal-game::before,
+    .giftastic::before {
+        opacity: 0.1;
+    }
 }
