@@ -46,7 +46,7 @@ header a {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 17px;
     margin: 0 20px;
     transition: all ease-in-out 100ms;
 }
@@ -380,7 +380,7 @@ footer div.social-links a {
         text-align: center;
     }
     header nav a {
-        font-size: 14px;
+        font-size: 17px;
     }
     footer p {
         text-align: center;
