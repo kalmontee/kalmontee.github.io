@@ -137,7 +137,6 @@ header a:hover {
 
 div.title h1 {
     text-align: center;
-    margin: 0;
     font-size: 4em;
     margin-top: 100px;
     color: rgb(255, 255, 255);
@@ -151,7 +150,6 @@ div.title h1 {
     padding: 30px;
     flex: 1 1 80%;
     min-height: 100vh auto;
-    margin: 0;
 }
 
 div.row {
@@ -189,47 +187,19 @@ div.card-body {
     border-radius: 50%;
 }
 
-.portfolio {
-    display: grid;
-    height: 100%;
-    /*The width determines the size of the grid*/
-    width: 120%;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(5, 1fr);
-    /* grid-template-rows: repeat(7, 1fr); */
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-gap: 10px;
-}
-
 .project-item {
-    /* background-color: orangered; */
-    background-color: #677cd8;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    /* padding: 180px; */
+    background-color: rgb(73, 75, 0);
     padding: 120px;
-    font-size: 1em;
 }
 
 
-/********Pyschic Game********/
+/********Projects section********/
 
-.medium {
-    /* grid-row: span 2;
-    grid-column: span 2; */
-    grid-row: span 2;
-    grid-column: span 2;
-}
-
-.psychic-game {
-    /* grid-row: span 2;
-    grid-column: span 2; */
-    grid-row: span 2;
-    grid-column: span 2;
-    background-image: url(../images/portfolio-images/psychic-game.png);
+.psychic-game,
+.crystal-game,
+.giftastic,
+.trivia-game,
+.hangry {
     background-size: cover;
     background-position: center;
     color: white;
@@ -238,14 +208,22 @@ div.card-body {
     transition: all ease-in-out 300ms;
     position: relative;
     text-shadow: 0 0 3px rgb(0, 0, 0.85);
-    z-index: 10;
+    z-index: 5;
 }
 
-.psychic-game:hover {
+.psychic-game:hover,
+.crystal-game:hover,
+.giftastic:hover,
+.trivia-game:hover,
+.hangry {
     color: black;
 }
 
-.psychic-game::before {
+.psychic-game::before,
+.crystal-game::before,
+.giftastic::before,
+.trivia-game::before,
+.hangry::before {
     content: '';
     display: block;
     background-color: black;
@@ -259,131 +237,34 @@ div.card-body {
     z-index: -1;
 }
 
-.psychic-game:hover::before {
+.psychic-game:hover::before,
+.crystal-game:hover::before,
+.giftastic:hover::before,
+.trivia-game:hover::before,
+.hangry:hover::before {
     background-position: center;
     opacity: 0.3;
 }
 
-.psychic-game:hover {
-    color: black;
+.psychic-game {
+    background-image: url(../images/portfolio-images/psychic-game.png);
 }
-
-
-/**********Crystal Game********/
 
 .crystal-game {
     background-image: url(../images/portfolio-images/crystal-collector.png);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    font-size: 20px;
-    background-position: top right;
-    transition: all ease-in-out 300ms;
-    position: relative;
-    z-index: 10;
 }
-
-.crystal-game::before {
-    content: '';
-    display: block;
-    background-color: black;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: all ease-in-out 300ms;
-    z-index: -1;
-}
-
-.crystal-game:hover::before {
-    background-position: center;
-    opacity: 0.3;
-}
-
-.crystal-game:hover {
-    color: black;
-}
-
-
-/* Trivia Game */
 
 .trivia-game {
     background-image: url(../images/portfolio-images/Trivia-game.png);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    font-size: 20px;
-    background-position: top right;
-    transition: all ease-in-out 300ms;
-    position: relative;
-    z-index: 10;
 }
-
-.trivia-game::before {
-    content: '';
-    display: block;
-    background-color: black;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: all ease-in-out 300ms;
-    z-index: -1;
-}
-
-.trivia-game:hover::before {
-    background-position: center;
-    opacity: 0.3;
-}
-
-.trivia-game:hover {
-    color: black;
-}
-
-
-/* Giftastic */
 
 .giftastic {
     background-image: url(../images/portfolio-images/Giftastic.png);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    font-size: 20px;
-    background-position: top right;
-    transition: all ease-in-out 300ms;
-    position: relative;
-    z-index: 10;
 }
 
-.giftastic::before {
-    content: '';
-    display: block;
-    background-color: black;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: all ease-in-out 300ms;
-    z-index: -1;
+.hangry {
+    background-image: url(../images/portfolio-images/Hangry.png);
 }
-
-.giftastic:hover::before {
-    background-position: center;
-    opacity: 0.3;
-}
-
-.giftastic:hover {
-    color: black;
-}
-
-
-/* Next Project */
 
 
 /*****Button******/
@@ -444,7 +325,10 @@ footer div.social-links a {
     padding: 5px;
 }
 
-#linkedIn {
+#linkedIn,
+#git,
+#email-link,
+#resume {
     color: white;
     transition-property: all;
     transition: ease-in-out 300ms;
@@ -456,25 +340,12 @@ footer div.social-links a {
     transform: rotateX(180deg);
 }
 
-#git {
-    color: white;
-    transition: ease-in-out 300ms;
-}
-
 #git:hover {
     color: black;
 }
 
-#email-link {
-    transition: ease-in-out 300ms;
-}
-
 #email-link:hover {
     color: rgb(10, 223, 10);
-}
-
-#resume {
-    transition: ease-in-out 300ms;
 }
 
 #resume:hover {
