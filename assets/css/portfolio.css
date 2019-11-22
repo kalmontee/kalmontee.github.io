@@ -199,6 +199,7 @@ div.card-body {
 .crystal-game,
 .giftastic,
 .trivia-game,
+.liri-bot,
 .hangry {
     background-size: cover;
     background-position: center;
@@ -215,6 +216,7 @@ div.card-body {
 .crystal-game:hover,
 .giftastic:hover,
 .trivia-game:hover,
+.liri-bot:hover,
 .hangry {
     color: black;
 }
@@ -223,6 +225,7 @@ div.card-body {
 .crystal-game::before,
 .giftastic::before,
 .trivia-game::before,
+.liri-bot::before,
 .hangry::before {
     content: '';
     display: block;
@@ -241,6 +244,7 @@ div.card-body {
 .crystal-game:hover::before,
 .giftastic:hover::before,
 .trivia-game:hover::before,
+.liri-bot:hover::before,
 .hangry:hover::before {
     background-position: center;
     opacity: 0.3;
@@ -264,6 +268,10 @@ div.card-body {
 
 .hangry {
     background-image: url(../images/portfolio-images/Hangry.png);
+}
+
+.liri-bot {
+    background-image: url(../images/portfolio-images/liribot.jpg);
 }
 
 
