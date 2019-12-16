@@ -49,11 +49,19 @@
                 <h1>Projects</h1>
             </div>
             <div class="main-content">
-                <div class="row">
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+                <nav id="buttons-menu">
+                    <button id="frontend">FrontEnd</button>
+                    <button id="backend">Backend</button>
+                    <button id="react">React</button>
+                    <!-- <button id="NodeJS">NodeJS</button> -->
+                    <!-- <button id="MySQL">MySQL</button> -->
+                    <button id="full-stack">Full Stack</button>
+                </nav>
+                <div class="row frontend-projects">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
                         <div class="card">
                             <!-- <img src="assets/images/psychic-game.png" class="card-img-top" alt="Psychic Game Img" width="300px"> -->
-                            <div class="project-item medium psychic-game"></div>
+                            <div class="project-item psychic-game"></div>
                             <div class="card-body">
 
                                 <h3 class="card-title">The Psychic Game</h3>
@@ -63,7 +71,7 @@
                                 <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
 
                                 <!-- Project Info -->
-                                <p class="card-text">What kind of powers do you have? Can you guess what letter the computer is guessing? I guess there's only one way to find out.</p>
+                                <p class="card-text">Randomly guessing what letter is the computer thinking. You'll have a max of 10 opportunities to get it right.</p>
 
                                 <!-- Project Link -->
                                 <a href="https://kalmontee.github.io/blue.js/" class="btn btn-outline-success" target="_blank">View Demo</a>
@@ -73,7 +81,7 @@
                     </div>
                     <div class="col-12 col-sm-10 col-md-8 col-lg-4">
                         <div class="card project2">
-                            <div class="project-item medium paradic crystal-game"></div>
+                            <div class="project-item crystal-game"></div>
                             <div class="card-body">
 
                                 <h3 class="card-title">Crystal Collector</h3>
@@ -84,7 +92,7 @@
                                 <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
 
                                 <!-- Project Info -->
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Each crystal is identified with a random number. Match the counter score with the random number score to win the game.</p>
 
                                 <!-- Project Link -->
                                 <a href="https://kalmontee.github.io/jaker/" class="btn btn-outline-success" target="_blank">View Demo</a>
@@ -92,14 +100,11 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End of row -->
-                </div>
-                <!-- New row -->
-                <div class="row">
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
                         <div class="card">
                             <!-- <img src="assets/images/psychic-game.png" class="card-img-top" alt="Psychic Game Img" width="300px"> -->
-                            <div class="project-item medium trivia-game"></div>
+                            <div class="project-item trivia-game"></div>
                             <div class="card-body">
 
                                 <h3 class="card-title">Totally Trivia Trival</h3>
@@ -110,7 +115,8 @@
                                 <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
 
                                 <!-- Project Info -->
-                                <p class="card-text">A Game of Thrones trivia game. The user will have 15 seconds to answer each question. At the end of the trivia the user will see their final score.</p>
+                                <p class="card-text">A Game of Thrones trivia game. The user will have 15 seconds to answer each question. At the end of the trivia the user will see their final score.
+                                </p>
 
                                 <!-- Project Link -->
                                 <a href="https://kalmontee.github.io/cubex/" class="btn btn-outline-success" target="_blank">View Demo</a>
@@ -118,9 +124,13 @@
                             </div>
                         </div>
                     </div>
+                    <!-- End of row -->
+                </div>
+                <!-- New row -->
+                <div class="row frontend-projects">
                     <div class="col-12 col-sm-10 col-md-8 col-lg-4">
                         <div class="card project2">
-                            <div class="project-item medium paradic giftastic"></div>
+                            <div class="project-item giftastic"></div>
                             <div class="card-body">
 
                                 <h3 class="card-title">Giphy API Search</h3>
@@ -129,7 +139,6 @@
                                 <img id="programming-img" src="assets/images/skills-images/css3.png" alt="CSS3" height="40px" width="40px">
                                 <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
                                 <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
-                                <!-- <img id="programming-img" src="assets/images/AJAX.jpg" alt="HTML5" height="40px" width="40px"> -->
 
                                 <!-- Project Info -->
                                 <p class="card-text">Using Giphys API to search all kinds of gif images. Click giphy image to play and pause.</p>
@@ -140,14 +149,10 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End of row div -->
-                </div>
-                <!-- New row -->
-                <div class="row">
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
                         <div class="card">
                             <!-- <img src="assets/images/psychic-game.png" class="card-img-top" alt="Psychic Game Img" width="300px"> -->
-                            <div class="project-item medium hangry"></div>
+                            <div class="project-item hangry"></div>
                             <div class="card-body">
 
                                 <h3 class="card-title">Hangry</h3>
@@ -159,7 +164,8 @@
                                 <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
 
                                 <!-- Project Info -->
-                                <p class="card-text">Restaurant finder in three easy steps using Google Maps and Zamato API.</p>
+                                <p class="card-text">Restaurant finder in three easy steps using Google Maps and Zamato API.
+                                </p>
 
                                 <!-- Project Link -->
                                 <a href="https://kalmontee.github.io/Balletime/" class="btn btn-outline-success" target="_blank">View Demo</a>
@@ -167,18 +173,23 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-4"></div>
+                    <!-- End of row div -->
+                </div>
+                <!-- New Row / Backend Projects-->
+                <div class="row backend-projects .nodeJS-projects">
                     <div class="col-12 col-sm-10 col-md-8 col-lg-4">
                         <div class="card project2">
-                            <div class="project-item medium liri-bot"></div>
+                            <div class="project-item liri-bot"></div>
                             <div class="card-body">
 
                                 <h3 class="card-title">Liri Bot</h3>
                                 <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
                                 <img id="programming-img" class="nodeJS" src="assets/images/skills-images/nodeJS.png" alt="nodeJS" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/AJAX.jpg" alt="AJAX" height="40px" width="40px">
+                                <!-- <img id="programming-img" src="assets/images/skills-images/AJAX.jpg" alt="AJAX" height="40px" width="40px"> -->
 
                                 <!-- Project Info -->
-                                <p class="card-text">LIRI is a Language Interpretation and Recognition Interface using NodeJS.</p>
+                                <p class="card-text">LIRI Bot is a Language Interpretation and Recognition Interface using NodeJS.</p>
 
                                 <!-- Project Link -->
                                 <!-- <a href="#" class="btn btn-outline-success" target="_blank">View Demo</a> -->
@@ -186,43 +197,129 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End of row div -->
-                </div>
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
+                        <div class="card">
+                            <!-- <img src="assets/images/psychic-game.png" class="card-img-top" alt="Psychic Game Img" width="300px"> -->
+                            <div class="project-item bamazon"></div>
+                            <div class="card-body">
 
-                <div class="more-button">
-                    <button class="btn btn-outline-danger"><a href="">More Projects <i
-                                    class="fas fa-arrow-down"></i></a></button>
+                                <h3 class="card-title">Bamazon</h3>
+                                <!-- Technologies -->
+                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/nodeJS.png" alt="CSS3" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/mySQL2.jpg" alt="JavaScript" height="40px" width="40px">
+
+                                <!-- Project Info -->
+                                <p class="card-text">Bamazon is a mini Amazon-like storefront using MySQL database.</p>
+
+                                <!-- Project Link -->
+                                <a href="https://github.com/kalmontee/backer" class="btn btn-outline-success" target="_blank">View GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
+                        <div class="card project2">
+                            <div class="project-item friend-finder"></div>
+                            <div class="card-body">
+
+                                <h3 class="card-title">Friend Finder</h3>
+                                <!-- Technologies -->
+                                <img id="programming-img" src="assets/images/skills-images/html5.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/css3.png" alt="CSS3" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/bootstrap.png" alt="CSS3" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/nodeJS.png" alt="jQuery" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/express.png" alt="jQuery" height="40px" width="40px">
+
+                                <!-- Project Info -->
+                                <p class="card-text"></p>
+
+                                <!-- Project Link -->
+                                <a href="https://protected-spire-84813.herokuapp.com/" class="btn btn-outline-success" target="_blank">View Demo</a>
+                                <a href="https://github.com/kalmontee/genter" class="btn btn-outline-success" target="_blank">View GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of row -->
+                </div>
+                <!-- New Row -->
+                <div class="row fullStack-projects">
+                    <div class=" col-12 col-sm-10 col-md-8 col-lg-4">
+                        <div class="card ">
+                            <div class="project-item eat-da-burger "></div>
+                            <div class="card-body ">
+
+                                <h3 class="card-title ">Eat-Da-Burger!</h3>
+                                <!-- Technologies -->
+                                <img id="programming-img" src="assets/images/skills-images/html5.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/css3.png" alt="CSS3" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/bootstrap.png" alt="Bootstrap" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/nodeJS.png" alt="nodeJS" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/express.png" alt="express.js" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/mySQL2.jpg" alt="mySQL" height="40px" width="40px">
+
+                                <!-- Project Info -->
+                                <p class="card-text ">Eat-Da-Burger! is a Full Stack restaurant App that lets users input the names of burgers they'd like to eat.</p>
+
+                                <!-- Project Link -->
+                                <a href="https://thawing-everglades-16049.herokuapp.com/ " class="btn btn-outline-success " target="_blank ">View Demo</a>
+                                <a href="https://github.com/kalmontee/Soulman " class="btn btn-outline-success " target="_blank ">View GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-12 col-sm-10 col-md-8 col-lg-4">
+                        <div class="card project2 ">
+                            <div class="project-item "></div>
+                            <div class="card-body ">
+
+                                <h3 class="card-title ">Upcoming Project</h3>
+                                <!-- Technologies -->
+                                <img id="programming-img" src="assets/images/skills-images/html5.png" alt="HTML5" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/css3.png" alt="CSS3" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/bootstrap.png" alt="Bootstrap" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/nodeJS.png" alt="nodeJS" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/express.png" alt="express.js" height="40px" width="40px">
+                                <img id="programming-img" src="assets/images/skills-images/mySQL2.jpg" alt="mySQL" height="40px" width="40px">
+
+                                <!-- Project Info -->
+                                <p class="card-text "></p>
+
+                                <!-- Project Link -->
+                                <a href="# " class="btn btn-outline-success " target="_blank ">View Demo</a>
+                                <a href="# " class="btn btn-outline-success " target="_blank ">View GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-4 "></div>
+                    <!-- End of row -->
                 </div>
             </div>
-
         </div>
     </section>
 
     <!--- Footer section-->
     <footer>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/almontek/" target="_blank" id="linkedIn"><i
-                    class="fab fa-linkedin"></i></a>
+        <div class="social-links ">
+            <a href="https://www.linkedin.com/in/almontek/ " target="_blank " id="linkedIn "><i
+                    class="fab fa-linkedin "></i></a>
 
-            <a href="https://github.com/kalmontee" target="_blank" id="git"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/kalmontee " target="_blank " id="git "><i class="fab fa-github "></i></a>
 
-            <!--------------No Facebook for now------------------>
-            <!-- <a href="https://www.facebook.com/almontee12" target="_blank" id="facebook"><i
-                        class="fab fa-facebook-square"></i></a> -->
+            <a href="mailto:kelvin.almonte95@gmail.com? subject=subject text " target="_blank " id="email-link "><i
+                    class="fas fa-envelope-square "></i></a>
 
-            <a href="mailto:kelvin.almonte95@gmail.com? subject=subject text" target="_blank" id="email-link"><i
-                    class="fas fa-envelope-square"></i></a>
-
-            <a href="#" id="resume"><i class="far fa-file"></i></a>
+            <a href="# " id="resume "><i class="far fa-file "></i></a>
             <p>&copy Kelvin Almonte, 2019</p>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/JavaScript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js " integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
+    <script src="assets/JavaScript/app.js "></script>
 </body>
 
 </html>
-<!-- Save for later! -->
-<!-- <img id="programming-img" src="assets/images/AJAX.jpg" alt="HTML5" height="40px" width="40px"> -->
-<!-- <img id="programming-img" src="assets/images/nodeJS.png" alt="HTML5" height="40px" width="40px" style="background-color: #fff;"> -->

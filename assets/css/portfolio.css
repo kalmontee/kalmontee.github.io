@@ -1,7 +1,7 @@
 /*********Global *************/
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     background-color: white;
     line-height: 1.5;
     margin: auto;
@@ -11,7 +11,7 @@ body {
 .header-container,
 .section-container {
     margin: auto;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     width: 90%;
     overflow: hidden;
 }
@@ -22,7 +22,7 @@ body {
 
 @viewport {
     width: device-width;
-    zoom: 1.0;
+    zoom: 1;
 }
 
 
@@ -140,21 +140,44 @@ div.title h1 {
     font-size: 4em;
     margin-top: 100px;
     color: rgb(255, 255, 255);
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     padding-bottom: 5px;
     border-bottom: 1px solid rgb(65, 65, 65);
 }
 
 .main-content {
     border-bottom: 1px solid rgb(73, 73, 73);
-    padding: 30px;
+    padding: 30px 0;
     flex: 1 1 80%;
     min-height: 100vh auto;
 }
 
+#buttons-menu {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#buttons-menu button {
+    border: none;
+    padding: 8px;
+    margin: 10px;
+    background-color: chartreuse;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#buttons-menu button:hover {
+    background-color: white;
+}
+
+#buttons-menu button:focus {
+    background-color: white;
+}
+
 div.row {
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 div.card {
@@ -163,6 +186,8 @@ div.card {
     margin-right: 30px;
     height: 500px;
     width: 420px;
+    -webkit-box-shadow: 0px 0px 12px -4px #dadada;
+    box-shadow: 0px 0px 12px -4px #dadada;
 }
 
 h3.card-title {
@@ -173,9 +198,8 @@ h3.card-title {
 
 div.card-body {
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     color: white;
-    /* background-color: rgba(0, 0, 0, 0.08); */
     background-color: #3b3b3b;
 }
 
@@ -193,13 +217,16 @@ div.card-body {
 }
 
 
-/********Projects section********/
+/********Projects View********/
 
 .psychic-game,
 .crystal-game,
 .giftastic,
 .trivia-game,
 .liri-bot,
+.bamazon,
+.friend-finder,
+.eat-da-burger,
 .hangry {
     background-size: cover;
     background-position: center;
@@ -217,7 +244,9 @@ div.card-body {
 .giftastic:hover,
 .trivia-game:hover,
 .liri-bot:hover,
-.hangry {
+.bamazon:hover,
+.friend-finder:hover,
+.eat-da-burger:hover .hangry {
     color: black;
 }
 
@@ -226,8 +255,11 @@ div.card-body {
 .giftastic::before,
 .trivia-game::before,
 .liri-bot::before,
+.bamazon::before,
+.friend-finder::before,
+.eat-da-burger::before,
 .hangry::before {
-    content: '';
+    content: "";
     display: block;
     background-color: black;
     opacity: 0.8;
@@ -245,6 +277,9 @@ div.card-body {
 .giftastic:hover::before,
 .trivia-game:hover::before,
 .liri-bot:hover::before,
+.bamazon:hover::before,
+.friend-finder:hover::before,
+.eat-da-burger:hover::before,
 .hangry:hover::before {
     background-position: center;
     opacity: 0.3;
@@ -274,6 +309,18 @@ div.card-body {
     background-image: url(../images/portfolio-images/liribot.jpg);
 }
 
+.bamazon {
+    background-image: url(../images/portfolio-images/bamazon.png);
+}
+
+.friend-finder {
+    background-image: url(../images/portfolio-images/friend-finder.png);
+}
+
+.eat-da-burger {
+    background-image: url(../images/portfolio-images/eat-da-burger.png);
+}
+
 
 /*****Button******/
 
@@ -289,23 +336,6 @@ div.more-button a {
     text-decoration: none;
     /*Transition*/
 }
-
-#btn-projects {
-    border: 1px solid darkgoldenrod;
-    color: white;
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 15px;
-    /* transition-property: background; */
-    transition-duration: 1s, 3s;
-    transition-timing-function: ease-in;
-}
-
-
-/* div.more-button a:hover {
-    color: rgb(77, 146, 236);
-} */
 
 
 /* Footer Section */
@@ -394,14 +424,6 @@ footer div.social-links a {
         width: auto;
         margin: 0;
     }
-    .portfolio {
-        display: grid;
-        height: 100%;
-        width: 125%;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 10px;
-    }
     div.card {
         margin-bottom: 40px;
     }
@@ -418,6 +440,10 @@ footer div.social-links a {
     .psychic-game::before,
     .trivia-game::before,
     .crystal-game::before,
+    .liri-bot::before,
+    .bamazon::before,
+    .friend-finder::before,
+    .hangry::before,
     .giftastic::before {
         opacity: 0.1;
     }
@@ -455,26 +481,28 @@ footer div.social-links a {
         text-align: center;
     }
     .section-container {
+        margin: 0px 20px;
+    }
+    .main-content {
+        height: auto;
+        width: auto;
         margin: 0;
-        /* padding: 0; */
-        padding: 0 10px;
-        /* padding-left: 15px; */
     }
     div.card {
-        width: 300px;
-        /* width: auto; */
+        width: auto;
+        height: auto;
         margin-right: 0;
-        margin-bottom: 85px;
     }
     div.card-body {
         padding: 0 20px;
     }
-    /* div.more-button {
-        margin-left: 40px;
-    } */
     .psychic-game::before,
     .trivia-game::before,
     .crystal-game::before,
+    .liri-bot::before,
+    .bamazon::before,
+    .hangry::before,
+    .friend-finder::before,
     .giftastic::before {
         opacity: 0.1;
     }
