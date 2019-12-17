@@ -212,13 +212,12 @@ div.card-body {
 
 .psychic-game,
 .crystal-game,
-.giftastic,
 .trivia-game,
-.liri-bot,
+.giftastic,
+.hangry .liri-bot,
 .bamazon,
 .friend-finder,
-.eat-da-burger,
-.hangry {
+.eat-da-burger {
     background-size: cover;
     background-position: center;
     color: white;
@@ -232,24 +231,24 @@ div.card-body {
 
 .psychic-game:hover,
 .crystal-game:hover,
-.giftastic:hover,
 .trivia-game:hover,
-.liri-bot:hover,
+.giftastic:hover,
+.hangry .liri-bot:hover,
 .bamazon:hover,
 .friend-finder:hover,
-.eat-da-burger:hover .hangry {
+.eat-da-burger:hover {
     color: black;
 }
 
 .psychic-game::before,
 .crystal-game::before,
-.giftastic::before,
 .trivia-game::before,
+.giftastic::before,
+.hangry::before,
 .liri-bot::before,
 .bamazon::before,
 .friend-finder::before,
-.eat-da-burger::before,
-.hangry::before {
+.eat-da-burger::before {
     content: "";
     display: block;
     background-color: black;
@@ -265,13 +264,13 @@ div.card-body {
 
 .psychic-game:hover::before,
 .crystal-game:hover::before,
-.giftastic:hover::before,
 .trivia-game:hover::before,
+.giftastic:hover::before,
+.hangry:hover::before,
 .liri-bot:hover::before,
 .bamazon:hover::before,
 .friend-finder:hover::before,
-.eat-da-burger:hover::before,
-.hangry:hover::before {
+.eat-da-burger:hover::before {
     background-position: center;
     opacity: 0.3;
 }
@@ -431,11 +430,11 @@ footer div.social-links a {
     .psychic-game::before,
     .trivia-game::before,
     .crystal-game::before,
+    .giftastic::before .hangry::before,
     .liri-bot::before,
     .bamazon::before,
     .friend-finder::before,
-    .hangry::before,
-    .giftastic::before {
+    .eat-da-burger::before {
         opacity: 0.1;
     }
 }
@@ -488,13 +487,14 @@ footer div.social-links a {
         padding: 0 20px;
     }
     .psychic-game::before,
-    .trivia-game::before,
     .crystal-game::before,
+    .trivia-game::before,
+    .giftastic::before,
+    .hangry::before,
     .liri-bot::before,
     .bamazon::before,
-    .hangry::before,
     .friend-finder::before,
-    .giftastic::before {
+    .eat-da-burger::before {
         opacity: 0.1;
     }
 }
