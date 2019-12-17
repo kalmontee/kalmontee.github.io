@@ -161,18 +161,9 @@ div.title h1 {
     border: none;
     padding: 8px;
     margin: 10px;
-    background-color: chartreuse;
     border-radius: 7px;
     font-size: 18px;
-    font-weight: 800;
-}
-
-#buttons-menu button:hover {
-    background-color: white;
-}
-
-#buttons-menu button:focus {
-    background-color: white;
+    font-weight: 600;
 }
 
 div.row {
