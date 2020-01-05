@@ -147,7 +147,7 @@ div.title h1 {
 
 .main-content {
     border-bottom: 1px solid rgb(73, 73, 73);
-    padding: 30px 0;
+    padding: 30px 5px;
     flex: 1 1 80%;
     min-height: 100vh auto;
 }
