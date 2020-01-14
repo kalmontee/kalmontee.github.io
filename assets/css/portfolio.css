@@ -218,7 +218,8 @@ div.card-body {
 .liri-bot,
 .bamazon,
 .friend-finder,
-.eat-da-burger {
+.eat-da-burger,
+.dev-seek {
     background-size: cover;
     background-position: center;
     color: white;
@@ -237,7 +238,8 @@ div.card-body {
 .hangry .liri-bot:hover,
 .bamazon:hover,
 .friend-finder:hover,
-.eat-da-burger:hover {
+.eat-da-burger:hover,
+.dev-seek:hover {
     color: black;
 }
 
@@ -249,7 +251,8 @@ div.card-body {
 .liri-bot::before,
 .bamazon::before,
 .friend-finder::before,
-.eat-da-burger::before {
+.eat-da-burger::before,
+.dev-seek::before {
     content: "";
     display: block;
     background-color: black;
@@ -271,7 +274,8 @@ div.card-body {
 .liri-bot:hover::before,
 .bamazon:hover::before,
 .friend-finder:hover::before,
-.eat-da-burger:hover::before {
+.eat-da-burger:hover::before,
+.dev-seek:hover::before {
     background-position: center;
     opacity: 0.3;
 }
@@ -310,6 +314,10 @@ div.card-body {
 
 .eat-da-burger {
     background-image: url(../images/portfolio-images/eat-da-burger.png);
+}
+
+.dev-seek {
+    background-image: url(../images/portfolio-images/dev-seek.png);
 }
 
 
@@ -431,11 +439,13 @@ footer div.social-links a {
     .psychic-game::before,
     .trivia-game::before,
     .crystal-game::before,
-    .giftastic::before .hangry::before,
+    .giftastic::before,
+    .hangry::before,
     .liri-bot::before,
     .bamazon::before,
     .friend-finder::before,
-    .eat-da-burger::before {
+    .eat-da-burger::before,
+    .dev-seek::before {
         opacity: 0.1;
     }
 }
@@ -495,7 +505,8 @@ footer div.social-links a {
     .liri-bot::before,
     .bamazon::before,
     .friend-finder::before,
-    .eat-da-burger::before {
+    .eat-da-burger::before,
+    .dev-seek::before {
         opacity: 0.1;
     }
 }
