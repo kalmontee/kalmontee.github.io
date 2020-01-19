@@ -234,7 +234,8 @@ div.contact-links p {
     color: white;
 }
 
-#phone-number a {
+#phone-number a,
+#email a {
     color: #0077b5;
     text-decoration: none;
 }

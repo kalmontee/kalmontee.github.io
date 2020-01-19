@@ -11,11 +11,8 @@ body {
 .header-container,
 .section-container {
     margin: auto;
-    /* padding: 0 20px; */
     width: 90%;
     overflow: hidden;
-    /*Change later in responsive*/
-    /* min-width: 500px; */
 }
 
 .section-container {
@@ -72,19 +69,6 @@ header #branding span {
     padding-top: 1px;
 }
 
-
-/*The hamburger - for responsive use only*/
-
-
-/* .movil-bar {
-    display: none;
-    font-size: 30px;
-    margin-right: 10px;
-    float: right;
-    padding-bottom: 3px;
-    cursor: pointer;
-} */
-
 header nav {
     display: flex;
     float: right;
@@ -119,16 +103,11 @@ nav a {
 header a:hover {
     color: rgb(77, 146, 236);
     font-weight: bold;
-    /*  background-color: rgb(0, 176, 154); */
-    /* border-radius: 5px; */
     padding-top: 5px;
     text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
-    /* .movil-bar {
-        display: block;
-    } */
     header {
         width: 100%;
     }
@@ -150,7 +129,7 @@ header a:hover {
         text-align: center;
     }
     header nav a {
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 
@@ -166,24 +145,13 @@ header a:hover {
     .header-container {
         padding: 0;
     }
-    /* header nav {
-        display: block;
-        height: auto;
-        width: 100%;
-        padding: 5px;
-        justify-content: center;
-    } */
-    /* header a {
-        margin: 0 10px;
+}
+
+@media only screen and (max-width: 330px) {
+    header nav a {
+        font-size: 15px;
+        margin: 0 8px;
     }
-    #branding {
-        display: block;
-        width: 100%;
-        float: left;
-    }
-    #home-click {
-        text-align: center;
-    } */
 }
 
 
@@ -209,7 +177,6 @@ div.title h1 {
     text-align: center;
     margin-top: 10%;
     font-size: 60px;
-    /* color: rgb(126, 134, 9); */
     color: rgb(255, 255, 255);
     font-family: "Shadows Into Light", cursive;
     border-bottom: 1px solid rgb(65, 65, 65);
@@ -220,7 +187,7 @@ div.selfie-img img {
     width: 350px;
     height: 350px;
     float: left;
-    margin: 15px 20px;
+    margin: 20px 20px 50px 20px;
     /* margin-bottom: 100px; */
     transition: ease-in-out 300ms;
     animation-name: img;
@@ -294,7 +261,6 @@ div.outside-info {
 /* Button at the end of the page. This leads to portfolio page */
 
 #explore {
-    /* padding: 10px; */
     margin-top: 25px;
     font-size: 15px;
     /*animation*/
@@ -323,7 +289,6 @@ footer {
     padding: 10px;
     font-weight: none;
     font-style: normal;
-    /* text-align: center; */
     text-align: end;
     position: sticky;
 }
@@ -376,9 +341,17 @@ footer div.social-links a {
     div.info p {
         font-size: 20px;
         line-height: 2em;
+        text-align: justify;
     }
     div.title h1 {
         font-size: 4em;
+    }
+    div.selfie-img img {
+        height: 300px;
+        width: 300px;
+        padding: 0;
+        margin-bottom: 0;
+        align-content: center;
     }
 }
 
@@ -394,6 +367,7 @@ footer div.social-links a {
         height: 300px;
         width: 300px;
         padding: 0;
+        margin-bottom: 0;
         align-content: center;
     }
     div.info {
@@ -404,6 +378,7 @@ footer div.social-links a {
     div.info p {
         padding: 0;
         margin: 0 auto;
+        text-align: justify;
         line-height: 2em;
     }
     div.inside-info {
@@ -438,13 +413,10 @@ footer div.social-links a {
     .section-container {
         width: auto;
         padding: 0 10px;
-        /* text-align: justify; */
     }
     div.selfie-img img {
         height: 300px;
         width: 300px;
-        /* margin-top: 20px;
-        margin-right: 25px; */
         margin: 25px;
     }
     div.info {
@@ -456,12 +428,30 @@ footer div.social-links a {
     div.bio-info {
         padding: 0;
     }
-    div.info-p {
-        float: left;
-        padding: 0;
-        font-size: 1.3em;
+    div.info p {
+        padding: 0 10px;
+        font-size: 1.2em;
+        text-align: justify;
     }
     div.title h1 {
         margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    div.title h1 {
+        margin-top: 35%;
+        font-size: 4em;
+    }
+    div.selfie-img img {
+        margin-top: 0;
+        height: 250px;
+        width: 250px;
+        margin: 25px;
+    }
+    div.info p {
+        padding: 0 5px;
+        font-size: 1.2em;
+        text-align: justify;
     }
 }
