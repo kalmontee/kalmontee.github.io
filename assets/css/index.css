@@ -6,12 +6,15 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     /* background-color: transparent; */
     background-color: white;
     line-height: 1.5;
     width: 100%;
     margin: auto;
+    background-image: url(../images/landing-page.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .header-container,
@@ -24,7 +27,7 @@ body {
 
 @viewport {
     width: device-width;
-    zoom: 1.0;
+    zoom: 1;
 }
 
 
@@ -119,8 +122,6 @@ nav a {
 header a:hover {
     color: rgb(77, 146, 236);
     font-weight: bold;
-    /*  background-color: rgb(0, 176, 154); */
-    /* border-radius: 5px; */
     padding-top: 5px;
     text-decoration: none;
 }
@@ -129,11 +130,11 @@ header a:hover {
 /************Section One - ShowCase********************/
 
 #showcase {
-    background: #232526;
+    /* background: #232526; */
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* background: -webkit-linear-gradient(to right, #414345, #232526); */
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #414345, #232526);
+    /* background: linear-gradient(to right, #414345, #232526); */
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -160,7 +161,7 @@ header a:hover {
 div.opening-container #name {
     font-weight: 10px;
     font-size: 3em;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     line-height: 1px;
     color: white;
     margin-top: 200px;
@@ -194,7 +195,7 @@ div.opening-container #name {
     font-size: 50px;
     /* color: rgb(77, 146, 236); */
     /* font-family: 'Open Sans', sans-serif; */
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     text-align: center;
     padding-bottom: 30px;
     /*Animation*/
@@ -254,7 +255,7 @@ div.opening-container p {
     }
 }
 
-#explore {
+#explore-btn {
     /* padding: 10px; */
     margin-top: 25px;
     font-size: 15px;
@@ -278,7 +279,7 @@ div.opening-container p {
     }
 }
 
-#explore a {
+#explore-btn a {
     text-decoration: none;
     color: white;
     padding: 10px;
@@ -288,7 +289,8 @@ div.opening-container p {
 /**********Footer**************/
 
 footer {
-    background: linear-gradient(to right, #414345, #232526);
+    /* background: linear-gradient(to right, #414345, #232526); */
+    background-color: transparent;
     color: white;
     display: block;
     padding: 15px;
@@ -406,7 +408,7 @@ footer div.social-links a {
         font-size: 40px;
         text-align: center;
     }
-    #explore {
+    #explore-btn {
         font-size: 15px;
     }
 }

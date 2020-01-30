@@ -129,7 +129,7 @@ header a:hover {
         text-align: center;
     }
     header nav a {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -165,12 +165,6 @@ header a:hover {
     background: linear-gradient(to right, #414345, #232526);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* height: auto; */
-}
-
-div.container-section-1 {
-    display: flex;
-    flex-flow: row;
-    margin-top: 3em;
 }
 
 div.title h1 {
@@ -217,13 +211,13 @@ div.selfie-img img:hover {
 
 /* Bio info div. profile img and about-me */
 
-div.info {
+div.article {
     background-color: transparent;
     color: white;
     height: auto;
-    /* margin: 80px 150px 100px 0px; */
-    /* border: 1px solid rgb(117, 117, 117); */
-    /* margin-bottom: 20px; */
+    display: flex;
+    flex-flow: row;
+    margin-top: 3em;
 }
 
 
@@ -236,50 +230,66 @@ div.bio-info {
     color: lightgray;
 }
 
-div.inside-info h3 {
-    /* margin: 0 10%; */
-    padding: 10px 0;
-    width: 70%;
-    font-weight: normal;
-    font-size: 25px;
+
+/***************** Skills ********************/
+
+.skills-title {
     text-align: center;
-    color: white;
+    margin-top: 3%;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    font-family: "Shadows Into Light", cursive;
     border-bottom: 1px solid rgb(65, 65, 65);
 }
+
+.html,
+.css,
+.JavaScript,
+.jQuery,
+.bootstrap,
+.nodeJS,
+.expressJS,
+.MySQL,
+.React,
+.mongodb {
+    margin-top: 30px;
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    padding: 0 10px;
+}
+
+.npm,
+.mern {
+    height: 80px;
+    width: auto;
+    padding: 0 10px;
+    margin-top: 30px;
+}
+
+
+/* Button at the end of the page. This leads to projects page */
 
 div.button {
     border-bottom: 1px solid rgb(73, 73, 73);
     text-align: center;
+    margin-top: 25px;
     padding-bottom: 30px;
 }
 
-div.outside-info {
-    text-align: center;
-}
-
-
-/* Button at the end of the page. This leads to portfolio page */
-
-#explore {
-    margin-top: 25px;
+div.button #explore {
     font-size: 15px;
-    /*animation*/
-    position: relative;
-    animation-name: button;
-    /* animation-duration: 5s; */
-    animation-fill-mode: forwards;
-    /* animation-delay: 8s;
-    animation-duration: 4s; */
-    /* opacity: 0; */
-    /*transition*/
+    font-weight: normal;
 }
 
-#explore a {
+div.button #explore a {
     text-decoration: none;
     color: white;
-    font-weight: normal;
-    padding: 5px;
+    padding: 10px;
 }
+
+
+/**************** Footer Section *******************/
 
 footer {
     background: linear-gradient(to right, #414345, #232526);
@@ -334,12 +344,14 @@ footer div.social-links a {
 /*iPad Pro screen*/
 
 @media only screen and (max-width: 1024px) {
-    div.info {
+    div.article {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
         width: auto;
-        margin: 50px 0;
     }
-    div.info p {
-        font-size: 20px;
+    div.article p {
+        font-size: 23px;
         line-height: 2em;
         text-align: justify;
     }
@@ -353,16 +365,30 @@ footer div.social-links a {
         margin-bottom: 0;
         align-content: center;
     }
+    .html,
+    .css,
+    .JavaScript,
+    .jQuery,
+    .bootstrap,
+    .nodeJS,
+    .expressJS,
+    .MySQL,
+    .React,
+    .mongodb {
+        height: 70px;
+        width: auto;
+    }
+    .npm,
+    .mern {
+        margin-top: 30px;
+        height: 70px;
+    }
 }
 
 
 /*Responsive*/
 
 @media only screen and (max-width: 768px) {
-    div.container-section-1 {
-        flex-flow: column;
-        align-items: center;
-    }
     div.selfie-img img {
         height: 300px;
         width: 300px;
@@ -370,30 +396,21 @@ footer div.social-links a {
         margin-bottom: 0;
         align-content: center;
     }
-    div.info {
+    div.article {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
         width: auto;
-        margin: 50px 0;
         margin-top: 0;
     }
-    div.info p {
+    div.article p {
         padding: 0;
         margin: 0 auto;
         text-align: justify;
         line-height: 2em;
     }
-    div.inside-info {
-        margin: auto;
-        /* margin-top: 70px; */
-    }
     div.bio-info {
         padding: 0;
-    }
-    div.inside-info h3 {
-        margin: 0 10%;
-        padding: 0;
-        font-weight: normal;
-        border-bottom: 1px solid rgb(83, 83, 83);
-        /* text-align: center; */
     }
     footer {
         text-align: center;
@@ -403,6 +420,24 @@ footer div.social-links a {
     }
     div.title h1 {
         margin-top: 20%;
+    }
+    .html,
+    .css,
+    .JavaScript,
+    .jQuery,
+    .bootstrap,
+    .nodeJS,
+    .expressJS,
+    .MySQL,
+    .React,
+    .mongodb {
+        height: 50px;
+        width: auto;
+    }
+    .npm,
+    .mern {
+        margin-top: 30px;
+        height: 50px;
     }
 }
 
@@ -419,7 +454,7 @@ footer div.social-links a {
         width: 300px;
         margin: 25px;
     }
-    div.info {
+    div.article {
         margin: 0;
         border: none;
         width: auto;
@@ -428,13 +463,31 @@ footer div.social-links a {
     div.bio-info {
         padding: 0;
     }
-    div.info p {
+    div.article p {
         padding: 0 10px;
-        font-size: 1.2em;
+        font-size: 17px;
         text-align: justify;
     }
     div.title h1 {
         margin-top: 30%;
+    }
+    .html,
+    .css,
+    .JavaScript,
+    .jQuery,
+    .bootstrap,
+    .nodeJS,
+    .expressJS,
+    .MySQL,
+    .React,
+    .mongodb {
+        height: 40px;
+        width: auto;
+    }
+    .npm,
+    .mern {
+        margin-top: 30px;
+        height: 40px;
     }
 }
 
@@ -449,9 +502,12 @@ footer div.social-links a {
         width: 250px;
         margin: 25px;
     }
-    div.info p {
+    div.article {
+        margin-bottom: 30px;
+    }
+    div.article p {
         padding: 0 5px;
-        font-size: 1.2em;
+        font-size: 15px;
         text-align: justify;
     }
 }

@@ -133,6 +133,12 @@ header a:hover {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: #606c88; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #3f4c6b, #606c88); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #3f4c6b, #606c88); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 div.title h1 {
@@ -340,7 +346,18 @@ div.more-button a {
 /* Footer Section */
 
 footer {
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526);
+    /* background: linear-gradient(to right, #414345, #232526); */
+    /* background: #606c88; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #3f4c6b, #606c88); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #3f4c6b, #606c88); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
     display: block;
     font-size: 15px;

@@ -1,7 +1,7 @@
 /*********Global *************/
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     background-color: white;
     line-height: 1.5;
     margin: auto;
@@ -9,16 +9,9 @@ body {
     padding: 0;
 }
 
-.header-container {
-    overflow: hidden;
-    margin: auto;
-    padding: 0 20px;
-    width: 90%;
-}
-
 @viewport {
     width: device-width;
-    zoom: 1.0;
+    zoom: 1;
 }
 
 
@@ -36,6 +29,13 @@ header {
     margin: 0;
     color: white;
     overflow: hidden;
+}
+
+.header-container {
+    overflow: hidden;
+    margin: auto;
+    padding: 0 20px;
+    width: 90%;
 }
 
 header a {
@@ -162,25 +162,29 @@ header a:hover {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: #606c88; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #3f4c6b, #606c88); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #3f4c6b, #606c88); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .contact-container {
     margin: auto;
     overflow: auto;
     padding: 0 20px;
-    width: 90%;
     min-height: 100vh;
+    width: 90%;
     height: auto;
     border-bottom: 1px solid rgb(73, 73, 73);
 }
 
-div.opening-container-contact {
+div.contact-boxes {
     margin: 50px 0;
     overflow: hidden;
-}
-
-div.flex {
     display: flex;
+    width: auto;
 }
 
 div.title h1 {
@@ -190,14 +194,13 @@ div.title h1 {
     color: #fff;
     text-align: center;
     font-size: 60px;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: "Shadows Into Light", cursive;
     border-bottom: 1px solid rgb(65, 65, 65);
 }
 
 div.contact-info {
     overflow: auto;
     color: white;
-    /* width: 700px; */
     width: 100%;
     height: auto;
     padding: 10px;
@@ -210,7 +213,7 @@ div.contact-info {
 
 div.contact-info p {
     font-size: 20px;
-    font-family: 'Comfortaa', cursive;
+    font-family: "Comfortaa", cursive;
     padding: 10px;
     line-height: 2;
 }
@@ -229,14 +232,16 @@ div.contact-links {
 div.contact-links p {
     font-size: 20px;
     text-align: center;
-    font-family: 'Comfortaa', cursive;
+    font-family: "Comfortaa", cursive;
     padding: 10px;
     color: white;
 }
 
 #phone-number a,
-#email a {
+#email a,
+#resume a {
     color: #0077b5;
+    /* color: #000000; */
     text-decoration: none;
 }
 
@@ -272,18 +277,6 @@ div.social-links a {
     color: black;
 }
 
-
-/* #facebook {
-    color: white;
-    transition: ease-in-out 300ms;
-}
-
-#facebook:hover {
-    /*  color: #4267B2; 
-    color: #0077b5;
-    border-radius: 10%;
-} */
-
 #email-link:hover {
     color: rgb(10, 223, 10);
 }
@@ -292,68 +285,6 @@ div.social-links a {
     color: yellow;
 }
 
-
-/* div.input {
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-form {
-    padding: 0 30px;
-} */
-
-
-/* #input-name,
-#email {
-    margin: auto;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
-    margin: 5px 0;
-    width: 40%;
-    width: 48%;
-    border-radius: .25rem;
-    border: 1px solid transparent;
-} */
-
-
-/* #message {
-    margin: auto;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
-    background-clip: padding-box;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    width: 90%;
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-} */
-
-
-/* #submit {
-    width: 90%;
-    width: 25%;
-    text-decoration: none;
-    border-radius: 10px;
-    background-color: #0077b5;
-    border: none;
-    display: block;
-    font-weight: 700px;
-    font-size: 1.125rem;
-    color: white;
-    padding: 5px;
-    cursor: pointer;
-} */
-
 footer {
     background: linear-gradient(to right, #414345, #232526);
     text-align: end;
@@ -361,8 +292,6 @@ footer {
     padding: 10px;
     font-weight: none;
     font-style: normal;
-    /* overflow: auto; */
-    /* height: auto; */
 }
 
 div.social-links {
@@ -376,47 +305,16 @@ footer .social-links a {
     padding: 5px;
 }
 
-@media only screen and (max-width: 640px) {
-    header {
-        height: auto;
-        padding: 0;
-    }
-    header nav a {
-        font-size: 17px;
-    }
-    .contact-container {
-        width: auto;
-    }
-    div.contact-info {
-        /* border: 2px solid rgb(117, 117, 117); */
-        border: none;
-        height: auto;
-        margin: 0 0 20px 0;
-        ;
-    }
-    div.title {
-        position: relative;
-        margin-top: 100px;
-    }
-    div.flex {
-        display: flex;
+@media only screen and (max-width: 1024px) {
+    div.contact-boxes {
         flex-flow: column;
-        clear: both;
+        justify-content: center;
     }
     div.contact-links {
-        padding: 10px;
-        margin: 0;
+        width: 95%;
     }
-    div.contact-info p {
-        line-height: 2;
-    }
-    div.social-links a {
-        padding: 0 10px;
-    }
-    footer {
-        text-align: center;
-        height: auto;
-        overflow: auto;
+    div.contact-info {
+        width: 95%;
     }
 }
 
@@ -429,17 +327,85 @@ footer .social-links a {
     div.title h1 {
         padding-top: 10%;
     }
-    div.flex {
+    div.contact-boxes {
         flex-flow: column;
-        width: 100%;
+        clear: both;
         justify-content: center;
+    }
+    div.contact-info p {
+        font-size: 17px;
+    }
+    div.contact-info {
+        border: none;
+        height: auto;
+        margin: 10px;
+    }
+    div.contact-links p {
+        font-size: 17px;
     }
     #contact {
         min-height: 100vh;
-        /* max-width: 100vh; */
         width: 100%;
     }
-    /* .contact-container {
-        width: 50%;
-    } */
+}
+
+@media only screen and (max-width: 640px) {
+    .header-container {
+        width: auto;
+    }
+    .contact-container {
+        width: auto;
+    }
+    div.contact-boxes {
+        flex-flow: column;
+        clear: both;
+    }
+    div.contact-info {
+        border: none;
+        height: auto;
+        margin: 10px;
+    }
+    div.title {
+        position: relative;
+        margin-top: 100px;
+    }
+    div.contact-links {
+        padding: 0px;
+        margin: 10px;
+    }
+    div.contact-info p {
+        line-height: 2;
+        font-size: 18px;
+    }
+    div.social-links a {
+        padding: 0 10px;
+    }
+    footer {
+        text-align: center;
+        height: auto;
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .header-container {
+        width: auto;
+    }
+    div.title h1 {
+        font-size: 45px;
+    }
+    div.contact-info p {
+        font-size: 15px;
+    }
+    div.contact-info {
+        border: none;
+        height: auto;
+        margin: 10px;
+    }
+    div.contact-links p {
+        font-size: 15px;
+    }
+    div.social-links a {
+        font-size: 18px;
+    }
 }
