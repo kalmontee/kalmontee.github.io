@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Kelvin Almonte">
     <!-----------Google Fonts------->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans|Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans|Shadows+Into+Light&display=swap"
+        rel="stylesheet">
     <!---------------Bootstrap--------------->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!---------Favicon/Webfonts----->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <!----------------CSSS------------------->
@@ -21,23 +23,15 @@
 <body>
     <header>
         <div class="header-container">
-            <!-- <div class="responsive-bar"> -->
             <div id="branding">
                 <h1 id="home-click"><a id="home-click" href="index.html">Kelvin <span>Almonte</span></a></h1>
             </div>
-
-            <!-- <div class="movil-bar">
-                <i class="fas fa-bars"></i>
-            </div> -->
-
             <nav>
                 <a href="about-me.html">About Me</a>
                 <a href="portfolio.html">Projects</a>
                 <a href="contact.html">Contact</a>
                 <!-- <a href="#">Blog</a> -->
-                <!---<i class="fas fa-bars"></i>-->
             </nav>
-            <!-- </div> -->
         </div>
     </header>
 
@@ -45,7 +39,7 @@
     <section id="projects">
         <div class="section-container">
             <div class="title">
-                <h1>Projects</h1>
+                <h1> <span id="projectTitleName"></span> Projects</h1>
             </div>
             <div class="main-content">
                 <nav id="buttons-menu">
@@ -53,249 +47,190 @@
                     <button id="react" class="btn btn-secondary">React</button>
                     <button id="backend" class="btn btn-secondary">Backend</button>
                     <button id="full-stack" class="btn btn-secondary">Full Stack</button>
-                    <!-- <button id="NodeJS">NodeJS</button> -->
-                    <!-- <button id="MySQL">MySQL</button> -->
                 </nav>
+                <!------------------------------Frontend Projects -------------------------------->
                 <div class="row frontend-projects">
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
-                        <div class="card">
-                            <!-- <img src="assets/images/psychic-game.png" class="card-img-top" alt="Psychic Game Img" width="300px"> -->
-                            <div class="project-item psychic-game"></div>
-                            <div class="card-body">
+                    <div class="dotted col-md-6">
+                        <!-- Img project will go here. -->
+                        <div class="project-item hangry"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Name of the Project -->
+                        <h4 id="project-name">Hangry</h4>
 
-                                <h3 class="card-title">The Psychic Game</h3>
-                                <!-- Technologies -->
-                                <img id="programming-img" src="assets/images/skills-images/html5.png" alt="HTML5" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/css3.png" alt="CSS3" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
+                        <!-- Instructions - paragraph -->
+                        <p id="project-info">Hangry is a restaurant finder in three easy steps using Google maps and
+                            Zamato API. Allowing the user to have the option to find their location or add their
+                            current address.
+                            <br>
+                            If user wants to view all their restaurants they found then they should click "Previous
+                            Places". There it will display all the restaurants they search.
+                        </p>
 
-                                <!-- Project Info -->
-                                <p class="card-text">Randomly guessing what letter is the computer thinking. You'll have a max of 10 opportunities to get it right.</p>
+                        <!-- Skills -->
+                        <div class="skills">
+                            <h2>Technologies</h2>
+                            <img id="programming-skills" src="assets/images/skills-images/html5.png" alt="HTML5">
+                            <img id="programming-skills" src="assets/images/skills-images/css3.png" alt="CSS3">
+                            <img id="programming-skills" src="assets/images/skills-images/JS.png" alt="JavaScript">
+                            <img id="programming-skills" src="assets/images/skills-images/bootstrap.png" alt="CSS3">
+                            <img id="programming-skills" src="assets/images/skills-images/jQuery.png" alt="jQuery">
+                        </div>
 
-                                <!-- Project Link -->
-                                <a href="https://kalmontee.github.io/blue.js/" class="btn btn-outline-success" target="_blank">View Demo</a>
-                                <a href="https://github.com/kalmontee/blue.js" class="btn btn-outline-success" target="_blank">View GitHub</a>
-                            </div>
+                        <!-- Link to GitHub and Project -->
+                        <div class="btn-links">
+                            <a id="demo" class="btn btn-success" href="https://kalmontee.github.io/Balletime"
+                                target="_blank">Demo</a>
+                            <a id="github" class="btn btn-info" href="https://github.com/kalmontee/Balletime"
+                                target="_blank">GitHub</a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
-                        <div class="card project2">
-                            <div class="project-item crystal-game"></div>
-                            <div class="card-body">
-
-                                <h3 class="card-title">Crystal Collector</h3>
-                                <!-- Technologies -->
-                                <img id="programming-img" src="assets/images/skills-images/html5.png" alt="HTML5" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/css3.png" alt="CSS3" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
-
-                                <!-- Project Info -->
-                                <p class="card-text">Each crystal is identified with a random number. Match the counter score with the random number score to win the game.</p>
-
-                                <!-- Project Link -->
-                                <a href="https://kalmontee.github.io/jaker/" class="btn btn-outline-success" target="_blank">View Demo</a>
-                                <a href="https://github.com/kalmontee/jaker" class="btn btn-outline-success" target="_blank">View GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
-                        <div class="card">
-                            <!-- <img src="assets/images/psychic-game.png" class="card-img-top" alt="Psychic Game Img" width="300px"> -->
-                            <div class="project-item trivia-game"></div>
-                            <div class="card-body">
-
-                                <h3 class="card-title">Totally Trivia Trival</h3>
-                                <!-- Technologies -->
-                                <img id="programming-img" src="assets/images/skills-images/html5.png" alt="HTML5" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/css3.png" alt="CSS3" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
-
-                                <!-- Project Info -->
-                                <p class="card-text">A Game of Thrones trivia game. The user will have 15 seconds to answer each question. At the end of the trivia the user will see their final score.
-                                </p>
-
-                                <!-- Project Link -->
-                                <a href="https://kalmontee.github.io/cubex/" class="btn btn-outline-success" target="_blank">View Demo</a>
-                                <a href="https://github.com/kalmontee/cubex" class="btn btn-outline-success" target="_blank">View GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of row -->
                 </div>
-                <!-- New row -->
                 <div class="row frontend-projects">
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
-                        <div class="card project2">
-                            <div class="project-item giftastic"></div>
-                            <div class="card-body">
+                    <div class="dotted col-md-6">
+                        <!-- Name of the Project -->
+                        <h4 id="project-name">Giphy API Search</h4>
 
-                                <h3 class="card-title">Giphy API Search</h3>
-                                <!-- Technologies -->
-                                <img id="programming-img" src="assets/images/skills-images/html5.png" alt="HTML5" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/css3.png" alt="CSS3" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
+                        <!-- Instructions - paragraph -->
+                        <p id="project-info">
+                            You will be begin with a set of random GIFs buttons. Once you click on the button it will
+                            display 10 different GIFs images. Make sure you click on the GIF image to play and click to
+                            pause as well. You also have the option to search of any type of GIF.
+                        </p>
 
-                                <!-- Project Info -->
-                                <p class="card-text">Using Giphys API to search all kinds of gif images. Click giphy image to play and pause.</p>
+                        <!-- Skills -->
+                        <div class="skills">
+                            <h2>Technologies</h2>
+                            <img id="programming-skills" src="assets/images/skills-images/html5.png" alt="HTML5">
+                            <img id="programming-skills" src="assets/images/skills-images/css3.png" alt="CSS3">
+                            <img id="programming-skills" src="assets/images/skills-images/JS.png" alt="JavaScript">
+                            <img id="programming-skills" src="assets/images/skills-images/jQuery.png" alt="jQuery">
+                        </div>
 
-                                <!-- Project Link -->
-                                <a href="https://kalmontee.github.io/Lambo/" class="btn btn-outline-success" target="_blank">View Demo</a>
-                                <a href="https://github.com/kalmontee/Lambo" class="btn btn-outline-success" target="_blank">View GitHub</a>
-                            </div>
+                        <!-- Link to GitHub and Project -->
+                        <div class="btn-links">
+                            <a id="demo" class="btn btn-success" href="https://kalmontee.github.io/Lambo/"
+                                target="_blank">Demo</a>
+                            <a id="github" class="btn btn-info" href="https://github.com/kalmontee/Lambo"
+                                target="_blank">GitHub</a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
-                        <div class="card">
-                            <!-- <img src="assets/images/psychic-game.png" class="card-img-top" alt="Psychic Game Img" width="300px"> -->
-                            <div class="project-item hangry"></div>
-                            <div class="card-body">
-
-                                <h3 class="card-title">Hangry</h3>
-                                <!-- Technologies -->
-                                <img id="programming-img" src="assets/images/skills-images/html5.png" alt="HTML5" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/css3.png" alt="CSS3" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/bootstrap.png" alt="CSS3" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
-
-                                <!-- Project Info -->
-                                <p class="card-text">Restaurant finder in three easy steps using Google Maps and Zamato API.
-                                </p>
-
-                                <!-- Project Link -->
-                                <a href="https://kalmontee.github.io/Balletime/" class="btn btn-outline-success" target="_blank">View Demo</a>
-                                <a href="https://github.com/kalmontee/Balletime" class="btn btn-outline-success" target="_blank">View GitHub</a>
-                            </div>
-                        </div>
+                    <div class="col-md-6">
+                        <!-- Img project will go here. -->
+                        <div class="project-item giftastic"></div>
                     </div>
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-4"></div>
-                    <!-- End of row div -->
                 </div>
-                <!-- New Row / Backend Projects-->
-                <div class="row backend-projects .nodeJS-projects">
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
-                        <div class="card project2">
-                            <div class="project-item liri-bot"></div>
-                            <div class="card-body">
 
-                                <h3 class="card-title">Liri Bot</h3>
-                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
-                                <img id="programming-img" class="nodeJS" src="assets/images/skills-images/nodeJS.png" alt="nodeJS" height="40px" width="40px">
+                <!--------------------- Backend Projects ------------------------>
+                <div class="row react-projects">
+                    <div class="dotted col-md-6">
+                        <!-- Img project will go here. -->
+                        <div class="project-item clickly-game"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Name of the Project -->
+                        <h4 id="project-name">SuperHeroes Clicky Game</h4>
 
-                                <!-- Project Info -->
-                                <p class="card-text">A node app that runs 4 commands from the terminal to pull up information from Spotify, BandsInTown, and OMDB.</p>
+                        <!-- Instructions - paragraph -->
+                        <p id="project-info">
+                            This is a clickly game built with React to track the number of clicks with a score. If the
+                            same image is clicked twice the game will be reset and user will be prompt with a message
+                            stating they lost the game. They could then click on another image to restart the game. Each
+                            correct click increments the users score by 1.
+                        </p>
 
-                                <!-- Project Link -->
-                                <!-- <a href="#" class="btn btn-outline-success" target="_blank">View Demo</a> -->
-                                <a href="https://github.com/kalmontee/fontrol" class="btn btn-outline-success" target="_blank">View GitHub</a>
-                            </div>
+                        <!-- Skills -->
+                        <div class="skills">
+                            <h2>Technologies</h2>
+                            <img id="programming-skills" src="assets/images/skills-images/React.png" alt="React">
+                        </div>
+
+                        <!-- Link to GitHub and Project -->
+                        <div class="btn-links">
+                            <a id="demo" class="btn btn-success" href="https://kalmontee.github.io/timePass"
+                                target="_blank">Demo</a>
+                            <a id="github" class="btn btn-info" href="https://github.com/kalmontee/timePass"
+                                target="_blank">GitHub</a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
-                        <div class="card">
-                            <div class="project-item bamazon"></div>
-                            <div class="card-body">
-
-                                <h3 class="card-title">Bamazon</h3>
-                                <!-- Technologies -->
-                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="HTML5" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/nodeJS.png" alt="CSS3" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/mySQL2.jpg" alt="JavaScript" height="40px" width="40px">
-
-                                <!-- Project Info -->
-                                <p class="card-text">A node app that access a MySQL database to allow users to purchase items and managers to monitor and adjust inventory.</p>
-
-                                <!-- Project Link -->
-                                <a href="https://github.com/kalmontee/backer" class="btn btn-outline-success" target="_blank">View GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-4">
-                        <div class="card project2">
-                            <div class="project-item friend-finder"></div>
-                            <div class="card-body">
-
-                                <h3 class="card-title">Friend Finder</h3>
-                                <!-- Technologies -->
-                                <img id="programming-img" src="assets/images/skills-images/html5.png" alt="HTML5" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/css3.png" alt="CSS3" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/bootstrap.png" alt="CSS3" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/nodeJS.png" alt="jQuery" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/express.png" alt="jQuery" height="40px" width="40px">
-
-                                <!-- Project Info -->
-                                <p class="card-text">Friend Finder implements friend matching based on the user's responses to a ten question survey.</p>
-
-                                <!-- Project Link -->
-                                <a href="https://protected-spire-84813.herokuapp.com/" class="btn btn-outline-success" target="_blank">View Demo</a>
-                                <a href="https://github.com/kalmontee/genter" class="btn btn-outline-success" target="_blank">View GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of row -->
                 </div>
-                <!-- New Row -->
+
+                <!--------------------- Backend Projects ------------------------>
+                <div class="row backend-projects">
+                    <div class="dotted col-md-6">
+                        <!-- Img project will go here. -->
+                        <div class="project-item bamazon"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Name of the Project -->
+                        <h4 id="project-name">Bamazon</h4>
+
+                        <!-- Instructions - paragraph -->
+                        <p id="project-info">
+                            Bamazon is a mini Amazon-like storefront using MySQL database where customers can buy
+                            products and manager has the option to use CRUD method on any of the inventory; check
+                            products for sale, quantity
+                            of stock, add to the inventory, create new products and delete products.
+                        </p>
+
+                        <!-- Skills -->
+                        <div class="skills">
+                            <h2>Technologies</h2>
+                            <img id="programming-skills" src="assets/images/skills-images/JS.png" alt="HTML5">
+                            <img id="programming-skills" src="assets/images/skills-images/nodeJS.png" alt="CSS3">
+                            <img id="programming-skills" src="assets/images/skills-images/mySQL2.jpg" alt="JavaScript">
+                        </div>
+
+                        <!-- Link to GitHub and Project -->
+                        <div class="btn-links">
+                            <a id="github" class="btn btn-info" href="https://github.com/kalmontee/backer"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------------- Full Stack Projects ------------------------>
                 <div class="row fullStack-projects">
-                    <div class=" col-12 col-sm-10 col-md-8 col-lg-4 col-xl-4">
-                        <div class="card ">
-                            <div class="project-item eat-da-burger"></div>
-                            <div class="card-body ">
+                    <div class="dotted col-md-6">
+                        <!-- Img project will go here. -->
+                        <div class="project-item dev-seek"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Name of the Project -->
+                        <h4 id="project-name">Dev Seek</h4>
 
-                                <h3 class="card-title ">Eat-Da-Burger!</h3>
-                                <!-- Technologies -->
-                                <img id="programming-img" src="assets/images/skills-images/html5.png" alt="HTML5" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/css3.png" alt="CSS3" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/bootstrap.png" alt="Bootstrap" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/nodeJS.png" alt="nodeJS" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/express.png" alt="express.js" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/mySQL2.jpg" alt="mySQL" height="40px" width="40px">
+                        <!-- Instructions - paragraph -->
+                        <p id="project-info">
+                            A full stack, MVC (Model-View-Controller) duel application that allows job seekers to search
+                            and apply for web development jobs all over country depending on their search parameters.
+                            This application also allows potential employers to post any web development openings they
+                            wish to fill. The application is very user friendly, intuitive and mobile responsive.
+                        </p>
 
-                                <!-- Project Info -->
-                                <p class="card-text ">Eat-Da-Burger is a Full Stack restaurant App that lets users input the names of burgers they'd like to eat.</p>
+                        <!-- Skills -->
+                        <div class="skills">
+                            <h2>Technologies</h2>
+                            <img id="programming-skills" src="assets/images/skills-images/html5.png" alt="HTML5">
+                            <img id="programming-skills" src="assets/images/skills-images/css3.png" alt="CSS3">
+                            <img id="programming-skills" src="assets/images/skills-images/JS.png" alt="JavaScript">
+                            <img id="programming-skills" src="assets/images/skills-images/bootstrap.png"
+                                alt="Bootstrap">
+                            <img id="programming-skills" src="assets/images/skills-images/jQuery.png" alt="jQuery">
+                            <img id="programming-skills" src="assets/images/skills-images/nodeJS.png" alt="nodeJS">
+                            <img id="programming-skills" src="assets/images/skills-images/express.png" alt="express.js">
+                            <img id="programming-skills" src="assets/images/skills-images/mySQL2.jpg" alt="mySQL">
+                        </div>
 
-                                <!-- Project Link -->
-                                <a href="https://thawing-everglades-16049.herokuapp.com/ " class="btn btn-outline-success " target="_blank ">View Demo</a>
-                                <a href="https://github.com/kalmontee/Soulman " class="btn btn-outline-success " target="_blank ">View GitHub</a>
-                            </div>
+                        <!-- Link to GitHub and Project -->
+                        <div class="btn-links">
+                            <a id="demo" class="btn btn-success" href="https://mighty-basin-29152.herokuapp.com"
+                                target="_blank">Demo</a>
+                            <a id="github" class="btn btn-info" href="https://github.com/kalmontee/lavice"
+                                target="_blank">GitHub</a>
                         </div>
                     </div>
-                    <div class=" col-12 col-sm-10 col-md-8 col-lg-4 col-xl-4">
-                        <div class="card ">
-                            <div class="project-item dev-seek"></div>
-                            <div class="card-body ">
-
-                                <h3 class="card-title ">Dev Seek</h3>
-                                <!-- Technologies -->
-                                <img id="programming-img" src="assets/images/skills-images/html5.png" alt="HTML5" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/css3.png" alt="CSS3" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/JS.png" alt="JavaScript" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/bootstrap.png" alt="Bootstrap" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/jQuery.png" alt="jQuery" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/nodeJS.png" alt="nodeJS" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/express.png" alt="express.js" height="40px" width="40px">
-                                <img id="programming-img" src="assets/images/skills-images/mySQL2.jpg" alt="mySQL" height="40px" width="40px">
-
-                                <!-- Project Info -->
-                                <p class="card-text ">A Full Stack app that allows developers to search and apply for web development jobs all over the country.
-                                </p>
-
-                                <!-- Project Link -->
-                                <a href="https://mighty-basin-29152.herokuapp.com/" class="btn btn-outline-success " target="_blank ">View Demo</a>
-                                <a href="https://github.com/kalmontee/lavice" class="btn btn-outline-success " target="_blank ">View GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-10 col-md-8 col-lg-4 col-xl-4"></div>
-                    <!-- End of row -->
                 </div>
+
             </div>
         </div>
     </section>
@@ -311,12 +246,13 @@
             <a href="mailto:kelvin.almonte95@gmail.com? subject=subject text " target="_blank" id="email-link"><i
                     class="fas fa-envelope-square "></i></a>
 
-            <a href="Kelvin-Resume.pdf" target="_blank" id="resume"><i class="far fa-file"></i></a>
+            <a href="Kelvin-Resumee.pdf" target="_blank" id="resume"><i class="far fa-file"></i></a>
             <p>&copy Kelvin Almonte, 2020</p>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
     <script src="assets/JavaScript/app.js "></script>
 </body>
 

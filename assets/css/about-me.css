@@ -75,31 +75,6 @@ header nav {
     margin-top: 7px;
 }
 
-nav a {
-    /*animation*/
-    position: relative;
-    animation-name: header-nav;
-    animation-duration: 5s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-@keyframes header-nav {
-    /* 0% {
-        right: -500px;
-    }
-    100% {
-        right: 0;
-    } */
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 header a:hover {
     color: rgb(77, 146, 236);
     font-weight: bold;
@@ -164,7 +139,6 @@ header a:hover {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* height: auto; */
 }
 
 div.title h1 {

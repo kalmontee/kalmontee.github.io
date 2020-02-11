@@ -1,19 +1,18 @@
 // Portfolio Page
 
-$(".fullStack-projects").hide();
-$(".backend-projects").hide();
-// $(".nodeJS-projects").hide();
-
 // This function will hide the following projects.
+hideProjects();
+
 function hideProjects() {
     $(".frontend-projects").hide();
     $(".backend-projects").hide();
     $(".fullStack-projects").hide();
+    $(".react-projects").hide();
 }
 
 // Frontend projects
-$("#frontend").on("click", function(event) {
-    event.preventDefault();
+$("#frontend").on("click", function() {
+    $("#projectTitleName").text("Frontend");
 
     hideProjects();
     $(".frontend-projects").show();
@@ -21,16 +20,24 @@ $("#frontend").on("click", function(event) {
 
 // Backend projects
 $("#backend").on("click", function() {
-    event.preventDefault();
+    $("#projectTitleName").text("Backend");
 
     hideProjects();
     $(".backend-projects").show();
 });
 
 // Full Stack projects
-$("#full-stack").on("click", function(event) {
-    event.preventDefault();
+$("#full-stack").on("click", function() {
+    $("#projectTitleName").text("Full Stack");
 
     hideProjects();
     $(".fullStack-projects").show();
-})
+});
+
+// All React projects
+$("#react").on("click", function() {
+    $("#projectTitleName").text("React");
+
+    hideProjects();
+    $(".react-projects").show();
+});
