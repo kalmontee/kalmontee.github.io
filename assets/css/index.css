@@ -302,15 +302,6 @@ footer div.social-links a {
 /**********Responsive***********/
 
 @media only screen and (max-width: 768px) {
-  /* .movil-bar {
-        display: block;
-    } */
-  /* .responsive-bar {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        float: right;
-    } */
   header {
     width: 100%;
   }
