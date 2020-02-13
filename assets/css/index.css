@@ -135,7 +135,7 @@ div.opening-container #name {
   position: relative;
   animation-name: kelvin;
   animation-delay: 1s;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -165,9 +165,9 @@ div.opening-container #name {
   /*Animation*/
   position: relative;
   animation-name: jobtitle;
-  animation-duration: 5s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-delay: 5s;
+  animation-delay: 3s;
   opacity: 0;
 }
 
@@ -205,8 +205,8 @@ div.opening-container p {
   animation-name: quote;
   /* animation-duration: 5s;  */
   animation-fill-mode: forwards;
-  animation-delay: 10s;
-  animation-duration: 4s;
+  animation-delay: 5s;
+  animation-duration: 3s;
   opacity: 0;
 }
 
@@ -228,8 +228,8 @@ div.opening-container p {
   animation-name: button;
   /* animation-duration: 5s;  */
   animation-fill-mode: forwards;
-  animation-delay: 13s;
-  animation-duration: 4s;
+  animation-delay: 5s;
+  animation-duration: 2s;
   opacity: 0;
   /*transition*/
 }
