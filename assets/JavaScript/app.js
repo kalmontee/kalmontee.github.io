@@ -3,6 +3,9 @@
 // This function will hide the following projects.
 hideProjects();
 
+// When user enters my portfolio section show the frontend projects first
+$(".frontend-projects").show();
+
 function hideProjects() {
     $(".frontend-projects").hide();
     $(".backend-projects").hide();
