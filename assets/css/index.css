@@ -220,9 +220,6 @@ div.opening-container p {
 }
 
 #explore-btn {
-  /* padding: 10px; */
-  margin-top: 25px;
-  font-size: 15px;
   /*animation*/
   position: relative;
   animation-name: button;
@@ -232,6 +229,15 @@ div.opening-container p {
   animation-duration: 2s;
   opacity: 0;
   /*transition*/
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin: 0.975rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.125rem;
+  border: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 @keyframes button {
