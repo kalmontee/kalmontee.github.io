@@ -197,7 +197,8 @@ div.title h1 {
 .bamazon,
 .eat-da-burger,
 .dev-seek,
-.clickly-game {
+.clickly-game,
+.fair-space {
   background-size: cover;
   background-position: center;
   background-position: top right;
@@ -213,7 +214,8 @@ div.title h1 {
 .bamazon:hover,
 .eat-da-burger:hover,
 .dev-seek:hover,
-.clickly-game:hover {
+.clickly-game:hover,
+.fair-space {
   color: black;
 }
 
@@ -222,7 +224,8 @@ div.title h1 {
 .bamazon::before,
 .eat-da-burger::before,
 .dev-seek::before,
-.clickly-game::before {
+.clickly-game::before,
+.fair-space::before {
   content: "";
   display: block;
   background-color: black;
@@ -241,7 +244,8 @@ div.title h1 {
 .bamazon:hover::before,
 .eat-da-burger:hover::before,
 .dev-seek:hover::before,
-.clickly-game:hover::before {
+.clickly-game:hover::before,
+.fair-space:hover::before {
   background-position: center;
   opacity: 0.3;
 }
@@ -267,6 +271,10 @@ div.title h1 {
 }
 .clickly-game {
   background-image: url(../images/portfolio-images/clicky-game.png);
+}
+
+.fair-space {
+  background-image: url(../images/portfolio-images/fair-space.png);
 }
 
 /* Footer Section */
@@ -376,7 +384,8 @@ footer div.social-links a {
   .bamazon,
   .eat-da-burger,
   .dev-seek,
-  .clickly-game {
+  .clickly-game,
+  .fair-space {
     background-size: cover;
     background-position: 50%;
   }
@@ -386,7 +395,8 @@ footer div.social-links a {
   .bamazon::before,
   .eat-da-burger::before,
   .dev-seek::before,
-  .clickly-game::before {
+  .clickly-game::before,
+  .fair-space::before {
     opacity: 0.1;
   }
 }
@@ -455,7 +465,8 @@ footer div.social-links a {
   .friend-finder::before,
   .eat-da-burger::before,
   .dev-seek::before,
-  .clickly-game::before {
+  .clickly-game::before,
+  .fair-space::before {
     opacity: 0.1;
   }
 }
