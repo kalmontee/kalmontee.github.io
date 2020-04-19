@@ -409,7 +409,7 @@ footer div.social-links a {
 
   header {
     height: auto;
-    padding: 0;
+    padding: 10px 0;
     width: 100%;
   }
 
@@ -452,7 +452,7 @@ footer div.social-links a {
 
   div.title h1 {
     font-size: 3rem;
-    margin-top: 30%;
+    margin-top: 35%;
   }
 
   #buttons-menu button {
@@ -469,5 +469,11 @@ footer div.social-links a {
   .clickly-game::before,
   .fair-space::before {
     opacity: 0.1;
+  }
+
+  footer,
+  footer p {
+    padding: auto;
+    font-size: 20px;
   }
 }

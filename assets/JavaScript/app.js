@@ -1,5 +1,20 @@
-// Portfolio Page
 
+let timeout;
+
+loader();
+
+// Set timeout of loader
+function loader() {
+    timeout = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+    $(".loaderContainer").hide();
+    $(".hideSection").show();
+}
+
+
+// Portfolio Page
 // This function will hide the following projects.
 hideProjects();
 
@@ -14,7 +29,7 @@ function hideProjects() {
 }
 
 // Frontend projects
-$("#frontend").on("click", function() {
+$("#frontend").on("click", function () {
     $("#projectTitleName").text("Frontend");
 
     hideProjects();
@@ -22,7 +37,7 @@ $("#frontend").on("click", function() {
 });
 
 // Backend projects
-$("#backend").on("click", function() {
+$("#backend").on("click", function () {
     $("#projectTitleName").text("Backend");
 
     hideProjects();
@@ -30,7 +45,7 @@ $("#backend").on("click", function() {
 });
 
 // Full Stack projects
-$("#full-stack").on("click", function() {
+$("#full-stack").on("click", function () {
     $("#projectTitleName").text("Full Stack");
 
     hideProjects();
@@ -38,7 +53,7 @@ $("#full-stack").on("click", function() {
 });
 
 // All React projects
-$("#react").on("click", function() {
+$("#react").on("click", function () {
     $("#projectTitleName").text("React");
 
     hideProjects();

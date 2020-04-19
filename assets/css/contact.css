@@ -79,9 +79,7 @@ header a:hover,
 }
 
 @media only screen and (max-width: 768px) {
-  header {
-    width: 100%;
-  }
+
   .header-container {
     text-align: center;
   }
@@ -232,10 +230,6 @@ footer {
   font-style: normal;
 }
 
-div.social-links {
-  text-align: center;
-}
-
 footer .social-links a {
   flex-flow: wrap;
   font-size: 20px;
@@ -248,9 +242,8 @@ footer .social-links a {
     flex-flow: column;
     justify-content: center;
   }
-  div.contact-links {
-    width: 95%;
-  }
+
+  div.contact-links,
   div.contact-info {
     width: 95%;
   }
@@ -288,36 +281,41 @@ footer .social-links a {
 }
 
 @media only screen and (max-width: 640px) {
-  .header-container {
-    width: auto;
-  }
+  .header-container,
   .contact-container {
     width: auto;
   }
+
   div.contact-boxes {
     flex-flow: column;
     clear: both;
   }
+
   div.contact-info {
     border: none;
     height: auto;
     margin: 10px;
   }
+
   div.title {
     position: relative;
     margin-top: 100px;
   }
+
   div.contact-links {
     padding: 0px;
     margin: 10px;
   }
+
   div.contact-info p {
     line-height: 2;
     font-size: 18px;
   }
+
   div.social-links a {
     padding: 0 10px;
   }
+
   footer {
     text-align: center;
     height: auto;
@@ -329,21 +327,32 @@ footer .social-links a {
   .header-container {
     width: auto;
   }
+
   div.title h1 {
     font-size: 45px;
   }
+
   div.contact-info p {
     font-size: 15px;
   }
+
   div.contact-info {
     border: none;
     height: auto;
     margin: 10px;
   }
+
   div.contact-links p {
     font-size: 15px;
   }
+
   div.social-links a {
     font-size: 18px;
+  }
+
+  footer,
+  footer p {
+    padding: auto;
+    font-size: 20px;
   }
 }
