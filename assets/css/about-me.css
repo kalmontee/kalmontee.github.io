@@ -2,7 +2,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   line-height: 1.5;
   margin: auto;
   width: 100%;
@@ -250,13 +250,16 @@ div.bio-info {
 .css,
 .JavaScript,
 .jQuery,
+.sass,
 .bootstrap,
 .nodeJS,
 .expressJS,
 .MySQL,
 .React,
 .mongodb,
-.firebase {
+.firebase,
+.npm,
+.mern {
   margin-top: 30px;
   height: 80px;
   width: auto;
@@ -264,12 +267,13 @@ div.bio-info {
   padding: 0 10px;
 }
 
+.sass {
+  width: 100px;
+}
+
 .npm,
 .mern {
-  height: 80px;
-  width: auto;
-  padding: 0 10px;
-  margin-top: 30px;
+  border-radius: 0;
 }
 
 /* Button at the end of the page. This leads to projects page */
@@ -309,7 +313,6 @@ footer {
   padding: 10px;
   font-weight: none;
   font-style: normal;
-  text-align: end;
   position: sticky;
 }
 
@@ -454,6 +457,7 @@ footer div.social-links p {
   .JavaScript,
   .jQuery,
   .bootstrap,
+  .sass,
   .nodeJS,
   .expressJS,
   .MySQL,
@@ -463,6 +467,11 @@ footer div.social-links p {
     height: 50px;
     width: auto;
   }
+
+  .sass {
+    width: 70px;
+  }
+
   .npm,
   .mern {
     margin-top: 30px;
@@ -528,6 +537,11 @@ footer div.social-links p {
     height: 50px;
     width: auto;
   }
+
+  .sass {
+    width: 65px;
+  }
+
   .npm,
   .mern {
     margin-top: 30px;

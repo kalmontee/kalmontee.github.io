@@ -9,7 +9,7 @@ body {
 }
 
 .loaderContainer {
-  background-color: #15202B;
+  background-color: #15202b;
   height: 100vh;
   padding: 0 510px;
 }
@@ -45,7 +45,6 @@ body {
     width: 100%;
     border-bottom: 2px solid rgb(7, 255, 14);
   }
-  
 }
 
 .header-container,
@@ -127,9 +126,17 @@ header nav a:hover,
 /**************Section Three - Projects *******************/
 
 #projects {
-  background: #2b5876;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 div.title h1 {
@@ -232,10 +239,8 @@ div.title h1 {
   padding: 200px 120px;
 }
 
-.giftastic,
 .hangry,
 .bamazon,
-.eat-da-burger,
 .dev-seek,
 .clickly-game,
 .fair-space {
@@ -249,20 +254,16 @@ div.title h1 {
   z-index: 3;
 }
 
-.giftastic:hover,
 .hangry:hover,
 .bamazon:hover,
-.eat-da-burger:hover,
 .dev-seek:hover,
 .clickly-game:hover,
 .fair-space {
   color: black;
 }
 
-.giftastic::before,
 .hangry::before,
 .bamazon::before,
-.eat-da-burger::before,
 .dev-seek::before,
 .clickly-game::before,
 .fair-space::before {
@@ -279,19 +280,13 @@ div.title h1 {
   z-index: -1;
 }
 
-.giftastic:hover::before,
 .hangry:hover::before,
 .bamazon:hover::before,
-.eat-da-burger:hover::before,
 .dev-seek:hover::before,
 .clickly-game:hover::before,
 .fair-space:hover::before {
   background-position: center;
   opacity: 0.3;
-}
-
-.giftastic {
-  background-image: url(../images/portfolio-images/Giftastic.png);
 }
 
 .hangry {
@@ -300,10 +295,6 @@ div.title h1 {
 
 .bamazon {
   background-image: url(../images/portfolio-images/bamazon.png);
-}
-
-.eat-da-burger {
-  background-image: url(../images/portfolio-images/eat-da-burger.png);
 }
 
 .dev-seek {
@@ -320,9 +311,13 @@ div.title h1 {
 /* Footer Section */
 
 footer {
-  background: #2b5876;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4e4376, #2b5876); 
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876);
   color: white;
   display: block;
   font-size: 15px;
@@ -435,21 +430,35 @@ footer div.social-links p {
     padding-bottom: 10px;
   }
 
-  .giftastic,
+  .bamazon {
+    background-position: 50%;
+    background-size: 336px 400px;
+    background-repeat: no-repeat;
+  }
+
   .hangry,
-  .bamazon,
-  .eat-da-burger,
-  .dev-seek,
-  .clickly-game,
-  .fair-space {
-    background-size: cover;
+  .clickly-game {
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  .hangry {
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  .dev-seek {
     background-position: 50%;
   }
 
-  .giftastic::before,
+  .fair-space {
+    background-position: 50%;
+    background-size: 170% 100%;
+    background-repeat: no-repeat;
+  }
+
   .hangry::before,
   .bamazon::before,
-  .eat-da-burger::before,
   .dev-seek::before,
   .clickly-game::before,
   .fair-space::before {
@@ -525,11 +534,37 @@ footer div.social-links p {
     padding: 0.7rem 1.2rem;
   }
 
-  .giftastic::before,
+  .bamazon {
+    background-position: 50%;
+    background-size: 336px 400px;
+    background-repeat: no-repeat;
+  }
+
+  .hangry,
+  .clickly-game {
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  .hangry {
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  .dev-seek {
+    background-position: 50%;
+    background-size: 160% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .fair-space {
+    background-position: 50%;
+    background-size: 160% 100%;
+    background-repeat: no-repeat;
+  }
+
   .hangry::before,
   .bamazon::before,
-  .friend-finder::before,
-  .eat-da-burger::before,
   .dev-seek::before,
   .clickly-game::before,
   .fair-space::before {
