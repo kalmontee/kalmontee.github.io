@@ -8,15 +8,50 @@ body {
   width: 100%;
 }
 
+.loaderContainer {
+  background-color: #15202B;
+  height: 100vh;
+  padding: 0 510px;
+}
+
+.hideSection {
+  display: none;
+}
+
+#loader {
+  font-family: "Courier New", Courier, monospace;
+  width: auto;
+  text-align: center;
+  padding: 300px 0 0 0;
+  z-index: 10;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #fff;
+  /* -webkit-animation: spin 2s linear infinite; */
+  /* animation: spin 2s linear infinite; */
+  /* animation: spin 5s; */
+}
+
+#loader-borderBottom {
+  animation: borderBottom 2s ease-in-out;
+}
+
+@keyframes borderBottom {
+  0% {
+    width: 0;
+    border-bottom: 2px solid rgb(7, 255, 14);
+  }
+  100% {
+    width: 100%;
+    border-bottom: 2px solid rgb(7, 255, 14);
+  }
+}
+
 .header-container,
 .section-container {
   margin: auto;
   width: 90%;
   overflow: hidden;
-}
-
-.section-container {
-  min-height: 100vh;
 }
 
 @viewport {
@@ -35,19 +70,19 @@ header {
   padding: 0;
   margin: 0;
   color: white;
-  padding-top: 10px;
+  padding: 10px 0;
 }
 
 header a {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 17px;
   margin: 0 20px;
   transition: all ease-in-out 100ms;
 }
 
-header #branding {
+header .header-container #branding {
   float: left;
 }
 
@@ -58,14 +93,16 @@ header #branding {
   font-style: italic;
 }
 
-header #branding span {
-  color: rgb(77, 146, 236);
-  font-style: italic;
-  font-weight: normal;
+#home-click a:hover {
+  color: rgb(7, 255, 14);
+  text-decoration: none;
+  font-weight: 600;
 }
 
-#home-click:hover {
-  padding-top: 1px;
+header #branding #home-click span {
+  color: rgb(7, 255, 14);
+  font-style: italic;
+  font-weight: normal;
 }
 
 header nav {
@@ -74,9 +111,9 @@ header nav {
   margin-top: 7px;
 }
 
-header a:hover,
+header nav a:hover,
 .active {
-  color: rgb(77, 146, 236);
+  color: rgb(7, 255, 14);
   font-weight: bold;
   padding-top: 5px;
   text-decoration: none;
@@ -142,12 +179,14 @@ header a:hover,
 /****************** Section Two - About Me*****************/
 
 #about-me {
-  background: #232526;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-container {
+  min-height: 100vh;
+  border-bottom: 1px solid rgb(65, 65, 65);
 }
 
 div.title h1 {
@@ -236,7 +275,6 @@ div.bio-info {
 /* Button at the end of the page. This leads to projects page */
 
 div.button {
-  border-bottom: 1px solid rgb(73, 73, 73);
   text-align: center;
   margin-top: 25px;
   padding-bottom: 30px;
@@ -264,6 +302,7 @@ div.button #explore a {
 
 footer {
   background: linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #4e4376, #2b5876);
   color: white;
   display: block;
   font-size: 15px;
@@ -283,6 +322,14 @@ footer div.social-links a {
   font-size: 20px;
   color: white;
   padding: 5px;
+}
+
+footer div.social-links a i {
+  margin: 0 5px;
+}
+
+footer div.social-links p {
+  font-size: 20px;
 }
 
 #linkedIn,
@@ -320,11 +367,14 @@ footer div.social-links a {
     align-items: center;
     width: auto;
   }
-  div.article p {
-    font-size: 23px;
+  
+  div.bio-info  {
     line-height: 2em;
     text-align: justify;
+    /* font-size: 18px; */
+    padding: 0;
   }
+
   div.title h1 {
     font-size: 4em;
   }
@@ -359,6 +409,16 @@ footer div.social-links a {
 /*Responsive*/
 
 @media only screen and (max-width: 768px) {
+  .loaderContainer {
+    padding: 0 120px;
+  }
+
+  #loader {
+    padding: 300px 0 0 0;
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+
   div.selfie-img img {
     height: 300px;
     width: 300px;
@@ -373,15 +433,13 @@ footer div.social-links a {
     width: auto;
     margin-top: 0;
   }
-  div.article p {
+  div.bio-info {
     padding: 0;
     margin: 0 auto;
     text-align: justify;
     line-height: 2em;
   }
-  div.bio-info {
-    padding: 0;
-  }
+
   footer {
     text-align: center;
   }
@@ -415,6 +473,16 @@ footer div.social-links a {
 /***movil responsive* (iphone X)***/
 
 @media only screen and (max-width: 640px) {
+  .loaderContainer {
+    padding: 0 40px;
+  }
+
+  #loader {
+    padding: 180px 0 0 0;
+    font-size: 2.1rem;
+    font-weight: 500;
+  }
+
   header {
     height: auto;
     padding: 10px 0;
@@ -457,13 +525,13 @@ footer div.social-links a {
   .React,
   .mongodb,
   .firebase {
-    height: 40px;
+    height: 50px;
     width: auto;
   }
   .npm,
   .mern {
     margin-top: 30px;
-    height: 40px;
+    height: 50px;
   }
 
   footer,

@@ -9,6 +9,45 @@ body {
   padding: 0;
 }
 
+.loaderContainer {
+  background-color: #15202b;
+  height: 100vh;
+  padding: 0 510px;
+}
+
+.hideSection {
+  display: none;
+}
+
+#loader {
+  font-family: "Courier New", Courier, monospace;
+  width: auto;
+  text-align: center;
+  padding: 300px 0 0 0;
+  z-index: 10;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #fff;
+  /* -webkit-animation: spin 2s linear infinite; */
+  /* animation: spin 2s linear infinite; */
+  /* animation: spin 5s; */
+}
+
+#loader-borderBottom {
+  animation: borderBottom 2s ease-in-out;
+}
+
+@keyframes borderBottom {
+  0% {
+    width: 0;
+    border-bottom: 2px solid rgb(7, 255, 14);
+  }
+  100% {
+    width: 100%;
+    border-bottom: 2px solid rgb(7, 255, 14);
+  }
+}
+
 @viewport {
   width: device-width;
   zoom: 1;
@@ -18,35 +57,32 @@ body {
 
 header {
   background-color: rgba(0, 0, 0, 0.08);
-  /* position: fixed; */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 0;
-  padding-top: 10px;
   margin: 0;
   color: white;
-  overflow: hidden;
+  padding: 10px 0;
 }
 
 .header-container {
-  overflow: hidden;
   margin: auto;
-  padding: 0 20px;
   width: 90%;
+  overflow: hidden;
 }
 
 header a {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 17px;
   margin: 0 20px;
   transition: all ease-in-out 100ms;
 }
 
-header #branding {
+header .header-container #branding {
   float: left;
 }
 
@@ -55,11 +91,17 @@ header #branding {
   margin-left: 10px;
   font-size: 25px;
   font-style: italic;
-  font-weight: normal;
 }
 
-header #branding span {
-  color: rgb(77, 146, 236);
+#home-click a:hover {
+  color: rgb(8, 80, 175);
+  color: rgb(7, 255, 14);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header #branding #home-click span {
+  color: rgb(7, 255, 14);
   font-style: italic;
   font-weight: normal;
 }
@@ -70,16 +112,15 @@ header nav {
   margin-top: 7px;
 }
 
-header a:hover,
+header nav a:hover,
 .active {
-  color: rgb(77, 146, 236);
+  color: rgb(7, 255, 14);
   font-weight: bold;
-  padding-top: 3px;
+  padding-top: 5px;
   text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
-
   .header-container {
     text-align: center;
   }
@@ -106,11 +147,9 @@ header a:hover,
 /**********************Section Four - Contact Section**************************/
 
 #contact {
-  background-color: #232526;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526);
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .contact-container {
@@ -153,7 +192,6 @@ div.contact-info {
 
 div.contact-info p {
   font-size: 20px;
-  font-family: "Comfortaa", cursive;
   padding: 10px;
   line-height: 2;
 }
@@ -170,7 +208,6 @@ div.contact-links {
 div.contact-links p {
   font-size: 20px;
   text-align: center;
-  font-family: "Comfortaa", cursive;
   padding: 10px;
   color: white;
 }
@@ -178,7 +215,7 @@ div.contact-links p {
 #phone-number a,
 #email a,
 #resume a {
-  color: #0077b5;
+  color: rgb(7, 255, 14);
   text-decoration: none;
 }
 
@@ -222,7 +259,9 @@ div.social-links a {
 }
 
 footer {
-  background: linear-gradient(to right, #414345, #232526);
+  background: #2b5876;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: end;
   color: white;
   padding: 10px;
@@ -235,6 +274,14 @@ footer .social-links a {
   font-size: 20px;
   color: white;
   padding: 5px;
+}
+
+footer div.social-links a i {
+  margin: 0 5px;
+}
+
+footer div.social-links p {
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -250,6 +297,16 @@ footer .social-links a {
 }
 
 @media only screen and (max-width: 768px) {
+  .loaderContainer {
+    padding: 0 120px;
+  }
+
+  #loader {
+    padding: 300px 0 0 0;
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+
   footer {
     text-align: center;
     height: auto;
@@ -281,6 +338,16 @@ footer .social-links a {
 }
 
 @media only screen and (max-width: 640px) {
+  .loaderContainer {
+    padding: 0 40px;
+  }
+
+  #loader {
+    padding: 180px 0 0 0;
+    font-size: 2.1rem;
+    font-weight: 500;
+  }
+
   .header-container,
   .contact-container {
     width: auto;

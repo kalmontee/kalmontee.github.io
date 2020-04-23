@@ -21,7 +21,7 @@
 </head>
 
 <body>
-	<header>
+	<header class="hideSection">
 		<div class="header-container">
 			<div id="branding">
 				<h1 id="home-click"><a id="home-click" href="index.html">Kelvin <span>Almonte</span></a></h1>
@@ -35,18 +35,22 @@
 		</div>
 	</header>
 
-	<!-- Third section of the website. This is where my projects are going to be located. Add 3 to 6 divs using CSS grid -->
-	<section id="projects">
+	<div class="loaderContainer">
+    <div id="loader">Kelvin Almonte</div>
+    <div id="loader-borderBottom"></div>
+  </div>
+
+	<section id="projects" class="hideSection">
 		<div class="section-container">
 			<div class="title">
 				<h1> <span id="projectTitleName"></span> Projects</h1>
 			</div>
 			<div class="main-content">
 				<nav id="buttons-menu">
-					<button id="frontend" class="btn btn-secondary">FrontEnd</button>
-					<button id="react" class="btn btn-secondary">React</button>
-					<button id="backend" class="btn btn-secondary">Backend</button>
-					<button id="full-stack" class="btn btn-secondary">Full Stack</button>
+					<button id="frontend" class="btn btn-success">FrontEnd</button>
+					<button id="react" class="btn btn-success">React</button>
+					<button id="backend" class="btn btn-success">Backend</button>
+					<button id="full-stack" class="btn btn-success">Full Stack</button>
 				</nav>
 				<!------------------------------Frontend Projects -------------------------------->
 				<div class="row frontend-projects">
@@ -246,7 +250,7 @@
 	</section>
 
 	<!--- Footer section-->
-	<footer>
+	<footer class="hideSection">
 		<div class="social-links ">
 			<a href="https://www.linkedin.com/in/almontek/" target="_blank" id="linkedIn"><i
 					class="fab fa-linkedin "></i></a>

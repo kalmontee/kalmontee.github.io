@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="hideSection">
     <div class="header-container">
       <div id="branding">
         <h1 id="home-click"><a id="home-click" href="index.html">Kelvin <span>Almonte</span></a></h1>
@@ -36,7 +36,12 @@
     </div>
   </header>
 
-  <section id="about-me">
+  <div class="loaderContainer">
+    <div id="loader">Kelvin Almonte</div>
+    <div id="loader-borderBottom"></div>
+  </div>
+
+  <section id="about-me" class="hideSection">
     <div class="section-container">
       <div class="title">
         <h1 id="about-me-title">About Me</h1>
@@ -106,7 +111,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="hideSection">
     <div class="social-links">
       <a href="https://www.linkedin.com/in/almontek/" target="_blank" id="linkedIn"><i class="fab fa-linkedin"></i></a>
 
@@ -119,6 +124,10 @@
       <p>Kelvin Almonte, 2020</p>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
+  <script src="./assets/JavaScript/app.js"></script>
 </body>
 
 </html>
