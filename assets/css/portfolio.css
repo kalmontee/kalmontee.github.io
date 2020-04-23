@@ -182,12 +182,7 @@ div.title h1 {
 }
 
 .row {
-  /* border-bottom: 1px solid #474747; */
   padding: 20px 0;
-}
-
-.dotted {
-  border-right: 1px solid #474747;
 }
 
 #project-name {
@@ -553,7 +548,7 @@ footer div.social-links p {
 
   .dev-seek {
     background-position: 50%;
-    background-size: 160% 100%;
+    background-size: 362px 446px;
     background-repeat: no-repeat;
   }
 
