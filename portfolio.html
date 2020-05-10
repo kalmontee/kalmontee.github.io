@@ -46,12 +46,11 @@
 				<h1> <span id="projectTitleName"></span> Projects</h1>
 			</div>
 			<div class="main-content">
-				<nav id="buttons-menu">
+				<menu id="buttons-menu">
 					<button id="frontend" class="btn btn-success">FrontEnd</button>
-					<button id="react" class="btn btn-success">React</button>
-					<button id="backend" class="btn btn-success">Backend</button>
+					<button id="mern" class="btn btn-success">MERN</button>
 					<button id="full-stack" class="btn btn-success">Full Stack</button>
-				</nav>
+				</menu>
 				<!------------------------------Frontend Projects -------------------------------->
 				<div class="row frontend-projects">
 					<div class="dotted col-md-6">
@@ -91,75 +90,80 @@
 					</div>
 				</div>
 
-				<!--------------------- React Projects ------------------------>
-				<div class="row react-projects">
-
+				<!--------------------- MERN Projects ------------------------>
+				<div class="row mern-projects">
 					<div class="dotted col-md-6">
+						<!-- Img project will go here. -->
+						<div class="project-item fair-space"></div>
+					</div>
+					<div class="col-md-6">
 						<!-- Name of the Project -->
-						<h4 id="project-name">SuperHeroes Clicky Game</h4>
+						<h4 id="project-name">Fair Space</h4>
 
 						<!-- Instructions - paragraph -->
 						<p id="project-info">
-							This is a clickly game built with React to track the number of clicks with a score. If the
-							same image is clicked twice the game will be reset and user will be prompt with a message
-							stating they lost the game. They could then click on another image to restart the game. Each
-							correct click increments the users score by 1.
+							Fair Space is a full stack MERN app based on apartment listing website, offering renters
+							access to information on available units for rent posted directly by landlords themselves.
+							It's powered by Google Maps and Rent Estimate third party APIs to give the consumer the
+							information needed to list and look for fair rental prices.
 						</p>
 
 						<!-- Skills -->
 						<div class="skills">
 							<h2>Technologies</h2>
 							<img id="programming-skills" src="assets/images/skills-images/React.png" alt="React">
+							<img id="programming-skills" src="assets/images/skills-images/bootstrap.png"
+								alt="Bootstrap">
+							<img id="programming-skills" src="assets/images/skills-images/nodeJS.png" alt="nodeJS">
+							<img id="programming-skills" src="assets/images/skills-images/express.png" alt="express.js">
+							<img id="programming-skills" src="assets/images/skills-images/mongodb.png" alt="MongoDB">
+							<img id="programming-skills" src="assets/images/skills-images/sass.png" alt="SASS">
+							<img id="programming-skills" src="assets/images/skills-images/firebase.png" alt="Firebase">
 						</div>
 
 						<!-- Link to GitHub and Project -->
 						<div class="btn-links">
-							<a id="demo" class="btn btn-success" href="https://superheroesclicky.herokuapp.com/"
+							<a id="demo" class="btn btn-success" href="https://fairspace.herokuapp.com/"
 								target="_blank">Demo</a>
-							<a id="github" class="btn btn-info" href="https://github.com/kalmontee/Click"
+							<a id="github" class="btn btn-info" href="https://github.com/kalmontee/chicons"
 								target="_blank">GitHub</a>
 						</div>
 					</div>
-					<div class=" col-md-6">
-						<!-- Img project will go here. -->
-						<div class="project-item clickly-game"></div>
-					</div>
 				</div>
 
-				<!--------------------- Backend Projects ------------------------>
-				<div class="row backend-projects">
+				<div class="row mern-projects">
 					<div class="dotted col-md-6">
-						<!-- Img project will go here. -->
-						<div class="project-item bamazon"></div>
-					</div>
-					<div class="col-md-6">
 						<!-- Name of the Project -->
-						<h4 id="project-name">Bamazon</h4>
+						<h4 id="project-name">Virtual GBooks</h4>
 
 						<!-- Instructions - paragraph -->
 						<p id="project-info">
-							A nodeJS app that was built to only work on the terminal.
-							<br><br>
-							Bamazon is a mini Amazon-like storefront using MySQL database where customers can buy
-							products and manager has the option to use CRUD method on any item of the inventory; check
-							products for sale, quantity
-							of stock, add to the inventory, create new products and delete products.
+							React-based Google Books API search app displaying a short info based on each book the user search. The user has the option to save books to their favorites or view more info. Once they are done reviewing the book they have the option to delete it.
 						</p>
 
 						<!-- Skills -->
 						<div class="skills">
 							<h2>Technologies</h2>
-							<img id="programming-skills" src="assets/images/skills-images/JS.png" alt="HTML5">
-							<img id="programming-skills" src="assets/images/skills-images/nodeJS.png" alt="CSS3">
-							<img id="programming-skills" src="assets/images/skills-images/MySQL.jpg" alt="MySQL">
+							<img id="programming-skills" src="assets/images/skills-images/React.png" alt="React">
+							<img id="programming-skills" src="assets/images/skills-images/nodeJS.png" alt="nodeJS">
+							<img id="programming-skills" src="assets/images/skills-images/express.png" alt="express.js">
+							<img id="programming-skills" src="assets/images/skills-images/mongodb.png" alt="MongoDB">
 						</div>
 
 						<!-- Link to GitHub and Project -->
 						<div class="btn-links">
-							<a id="github" class="btn btn-info" href="https://github.com/kalmontee/backer"
+							<a id="demo" class="btn btn-success" href="https://virtualgbooks.herokuapp.com/"
+								target="_blank">Demo</a>
+							<a id="github" class="btn btn-info" href="https://github.com/kalmontee/windex"
 								target="_blank">GitHub</a>
 						</div>
 					</div>
+
+					<div class="col-md-6">
+						<!-- Img project will go here. -->
+						<div class="project-item virtualgbooks"></div>
+					</div>
+
 				</div>
 
 				<!--------------------- Full Stack Projects ------------------------>
@@ -204,47 +208,6 @@
 						<div class="project-item dev-seek"></div>
 					</div>
 
-				</div>
-
-				<div class="row fullStack-projects">
-					<div class="dotted col-md-6">
-						<!-- Img project will go here. -->
-						<div class="project-item fair-space"></div>
-					</div>
-					<div class="col-md-6">
-						<!-- Name of the Project -->
-						<h4 id="project-name">Fair Space</h4>
-
-						<!-- Instructions - paragraph -->
-						<p id="project-info">
-							Fair Space is a full stack MERN app based on apartment listing website, offering renters
-							access to information on available units for rent posted directly by landlords themselves.
-							It's powered by Google Maps and Rent Estimate third party APIs to give the consumer the
-							information needed to list and look for fair rental prices.
-						</p>
-
-						<!-- Skills -->
-						<div class="skills">
-							<h2>Technologies</h2>
-							<img id="programming-skills" src="assets/images/skills-images/React.png" alt="React">
-							<img id="programming-skills" src="assets/images/skills-images/bootstrap.png"
-								alt="Bootstrap">
-							<img id="programming-skills" src="assets/images/skills-images/nodeJS.png" alt="nodeJS">
-							<img id="programming-skills" src="assets/images/skills-images/express.png" alt="express.js">
-							<img id="programming-skills" src="assets/images/skills-images/mongodb.png" alt="MongoDB">
-							<img id="programming-skills" src="assets/images/skills-images/sass.png" alt="SASS">
-							<img id="programming-skills" src="assets/images/skills-images/firebase.png" alt="Firebase">
-						</div>
-
-						<!-- Link to GitHub and Project -->
-						<div class="btn-links">
-							<!-- https://sleepy-brook-31584.herokuapp.com  -->
-							<a id="demo" class="btn btn-success" href="https://fairspace.herokuapp.com/"
-								target="_blank">Demo</a>
-							<a id="github" class="btn btn-info" href="https://github.com/kalmontee/chicons"
-								target="_blank">GitHub</a>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

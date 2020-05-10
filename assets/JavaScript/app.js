@@ -23,7 +23,7 @@ $(".frontend-projects").show();
 
 function hideProjects() {
     $(".frontend-projects").hide();
-    $(".backend-projects").hide();
+    $(".mern-projects").hide();
     $(".fullStack-projects").hide();
     $(".react-projects").hide();
 }
@@ -36,12 +36,12 @@ $("#frontend").on("click", function () {
     $(".frontend-projects").show();
 });
 
-// Backend projects
-$("#backend").on("click", function () {
-    $("#projectTitleName").text("Backend");
+// MERN projects
+$("#mern").on("click", function () {
+    $("#projectTitleName").text("MERN");
 
     hideProjects();
-    $(".backend-projects").show();
+    $(".mern-projects").show();
 });
 
 // Full Stack projects

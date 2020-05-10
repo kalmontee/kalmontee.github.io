@@ -237,7 +237,7 @@ div.title h1 {
 .hangry,
 .bamazon,
 .dev-seek,
-.clickly-game,
+.virtualgbooks,
 .fair-space {
   background-size: cover;
   background-position: center;
@@ -252,7 +252,7 @@ div.title h1 {
 .hangry:hover,
 .bamazon:hover,
 .dev-seek:hover,
-.clickly-game:hover,
+.virtualgbooks:hover,
 .fair-space {
   color: black;
 }
@@ -260,7 +260,7 @@ div.title h1 {
 .hangry::before,
 .bamazon::before,
 .dev-seek::before,
-.clickly-game::before,
+.virtualgbooks::before,
 .fair-space::before {
   content: "";
   display: block;
@@ -278,7 +278,7 @@ div.title h1 {
 .hangry:hover::before,
 .bamazon:hover::before,
 .dev-seek:hover::before,
-.clickly-game:hover::before,
+.virtualgbooks:hover::before,
 .fair-space:hover::before {
   background-position: center;
   opacity: 0.3;
@@ -295,8 +295,8 @@ div.title h1 {
 .dev-seek {
   background-image: url(../images/portfolio-images/dev-seek.png);
 }
-.clickly-game {
-  background-image: url(../images/portfolio-images/clicky-game.png);
+.virtualgbooks {
+  background-image: url(../images/portfolio-images/virtualgbooks.png);
 }
 
 .fair-space {
@@ -455,7 +455,7 @@ footer div.social-links p {
   .hangry::before,
   .bamazon::before,
   .dev-seek::before,
-  .clickly-game::before,
+  .virtualgbooks::before,
   .fair-space::before {
     opacity: 0.1;
   }
@@ -561,7 +561,7 @@ footer div.social-links p {
   .hangry::before,
   .bamazon::before,
   .dev-seek::before,
-  .clickly-game::before,
+  .virtualgbooks::before,
   .fair-space::before {
     opacity: 0.1;
   }
