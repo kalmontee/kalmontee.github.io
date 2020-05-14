@@ -46,7 +46,7 @@ body {
 }
 
 #loader-borderBottom {
-  animation: borderBottom 2s ease-in-out;
+  animation: borderBottom 1.2s ease-in-out;
 }
 
 @keyframes borderBottom {
@@ -186,15 +186,22 @@ footer {
   background-color: transparent;
   color: white;
   display: block;
-  padding: 15px;
+  padding: 15px 0;
   position: sticky;
   font-weight: none;
   font-style: normal;
-  text-align: center;
 }
 
-div.social-links {
-  text-align: center;
+footer div.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+}
+
+footer div.footerNameTitle {
+  font-size: 20px;
 }
 
 footer div.social-links a {
@@ -206,10 +213,6 @@ footer div.social-links a {
 
 footer div.social-links a i {
   margin: 0 5px;
-}
-
-footer div.social-links p {
-  font-size: 20px;
 }
 
 #linkedIn,
@@ -322,13 +325,6 @@ footer div.social-links p {
     margin-bottom: 20px;
     /* color: #ffff; */
   }
-
-  footer p {
-    text-align: center;
-  }
-  div.social-links a {
-    padding-bottom: 10px;
-  }
 }
 
 /*movil responsive*/
@@ -378,13 +374,14 @@ footer div.social-links p {
     padding: 0;
     color: #ffff;
   }
+
   #explore-btn {
     font-size: 15px;
   }
 
-  footer,
-  footer p {
-    padding: auto;
-    font-size: 20px;
+  footer div.footerContainer {
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
   }
 }

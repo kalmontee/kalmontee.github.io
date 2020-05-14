@@ -34,7 +34,7 @@ body {
 }
 
 #loader-borderBottom {
-  animation: borderBottom 2s ease-in-out;
+  animation: borderBottom 1.2s ease-in-out;
 }
 
 @keyframes borderBottom {
@@ -259,17 +259,35 @@ div.social-links a {
 }
 
 footer {
-  background: #2b5876;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  text-align: end;
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876);
   color: white;
-  padding: 10px;
+  display: block;
+  font-size: 15px;
+  padding: 15px 0;
+  position: sticky;
   font-weight: none;
   font-style: normal;
 }
 
-footer .social-links a {
+footer div.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+}
+
+footer div.footerNameTitle {
+  font-size: 20px;
+}
+
+footer div.social-links a {
   flex-flow: wrap;
   font-size: 20px;
   color: white;
@@ -278,10 +296,6 @@ footer .social-links a {
 
 footer div.social-links a i {
   margin: 0 5px;
-}
-
-footer div.social-links p {
-  font-size: 20px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -308,13 +322,14 @@ footer div.social-links p {
   }
 
   footer {
-    text-align: center;
     height: auto;
     overflow: auto;
   }
+
   div.title h1 {
     padding-top: 10%;
   }
+
   div.contact-boxes {
     flex-flow: column;
     clear: both;
@@ -383,10 +398,10 @@ footer div.social-links p {
     padding: 0 10px;
   }
 
-  footer {
+  footer div.footerContainer {
+    display: flex;
     text-align: center;
-    height: auto;
-    overflow: auto;
+    flex-direction: column-reverse;
   }
 }
 
@@ -415,11 +430,5 @@ footer div.social-links p {
 
   div.social-links a {
     font-size: 18px;
-  }
-
-  footer,
-  footer p {
-    padding: auto;
-    font-size: 20px;
   }
 }

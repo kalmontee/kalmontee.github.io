@@ -9,7 +9,7 @@ body {
 }
 
 .loaderContainer {
-  background-color: #15202B;
+  background-color: #15202b;
   height: 100vh;
   padding: 0 510px;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 #loader-borderBottom {
-  animation: borderBottom 2s ease-in-out;
+  animation: borderBottom 1.2s ease-in-out;
 }
 
 @keyframes borderBottom {
@@ -123,7 +123,7 @@ header nav a:hover,
   header {
     width: 100%;
   }
-  
+
   header nav {
     height: auto;
     width: 100%;
@@ -146,7 +146,6 @@ header nav a:hover,
   #home-click {
     text-align: center;
   }
-
 }
 
 @media only screen and (max-width: 640px) {
@@ -179,9 +178,17 @@ header nav a:hover,
 /****************** Section Two - About Me*****************/
 
 #about-me {
-  background: #2b5876;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .section-container {
@@ -305,19 +312,32 @@ div.button #explore a {
 /**************** Footer Section *******************/
 
 footer {
-  background: linear-gradient(to right, #414345, #232526);
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4e4376, #2b5876);
   color: white;
   display: block;
   font-size: 15px;
-  padding: 10px;
+  padding: 15px 0;
+  position: sticky;
   font-weight: none;
   font-style: normal;
-  position: sticky;
 }
 
-div.social-links {
-  text-align: center;
+footer div.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+}
+
+footer div.footerNameTitle {
+  font-size: 20px;
 }
 
 footer div.social-links a {
@@ -329,10 +349,6 @@ footer div.social-links a {
 
 footer div.social-links a i {
   margin: 0 5px;
-}
-
-footer div.social-links p {
-  font-size: 20px;
 }
 
 #linkedIn,
@@ -370,8 +386,8 @@ footer div.social-links p {
     align-items: center;
     width: auto;
   }
-  
-  div.bio-info  {
+
+  div.bio-info {
     line-height: 2em;
     text-align: justify;
     /* font-size: 18px; */
@@ -443,9 +459,6 @@ footer div.social-links p {
     line-height: 2em;
   }
 
-  footer {
-    text-align: center;
-  }
   div.social-links a {
     padding-bottom: 10px;
   }
@@ -548,10 +561,10 @@ footer div.social-links p {
     height: 50px;
   }
 
-  footer,
-  footer p {
-    padding: auto;
-    font-size: 20px;
+  footer div.footerContainer {
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
   }
 }
 
@@ -576,11 +589,5 @@ footer div.social-links p {
     padding: 0 5px;
     font-size: 15px;
     text-align: justify;
-  }
-
-  footer,
-  footer p {
-    padding: auto;
-    font-size: 18px;
   }
 }

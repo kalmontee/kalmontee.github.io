@@ -5,7 +5,7 @@ loader();
 
 // Set timeout of loader
 function loader() {
-    timeout = setTimeout(showPage, 2000);
+    timeout = setTimeout(showPage, 1200);
 }
 
 function showPage() {
