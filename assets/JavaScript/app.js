@@ -1,7 +1,18 @@
-
 let timeout;
 
 loader();
+updateYear();
+
+// Portfolio Page
+// This function will hide the following projects.
+hideProjects();
+
+// function for updating the year automatically in the footer
+function updateYear() {
+    let date = new Date();
+    let currentYear = date.getFullYear();
+    $("#year").html(currentYear);
+}
 
 // Set timeout of loader
 function loader() {
@@ -13,10 +24,6 @@ function showPage() {
     $(".hideSection").show();
 }
 
-
-// Portfolio Page
-// This function will hide the following projects.
-hideProjects();
 
 // When user enters my portfolio section show the frontend projects first
 $(".frontend-projects").show();
